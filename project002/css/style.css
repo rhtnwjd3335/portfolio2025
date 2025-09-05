@@ -2492,6 +2492,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .review .review_btn>p:nth-child(1) {
