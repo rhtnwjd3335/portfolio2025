@@ -2383,6 +2383,8 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    cursor: pointer;
 }
 
 .review .review_img ul li.on {
