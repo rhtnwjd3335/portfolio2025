@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARIBO</title>
+
+    <!-- 외부스타일시트연결 -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 제이쿼리CDN -->
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+        charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 외부스크립트연결 -->
+    <script src="javascript/js.js"></script>
+
+    <!-- 폰트어썸연결CDN -->
+    <script src="https://kit.fontawesome.com/5b60675eee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <h1 class="logo"><a href="">logo</a></h1>
+        <div class="util">
+            <ul>
+                <li><a href="">로그인/회원가입</a></li>
+                <li>
+                    <a href="">장바구니</a>
+                    <span>0</span>
+                </li>
+                <li><a href="">검색</a></li>
+                <li><a href="">메뉴</a></li>
+            </ul>
+        </div>
+        <div class="shop">
+            <div class="title">
+                <h2>cart</h2>
+            </div>
+
+            <div class="cart_main">
+                <div class="cart_product">
+                    <!-- <div class="cart_sub">
+                        <img src="img/jelly_goldbaeren.png" alt="">
+                        <div class="cart_menu">
+                            <h3>Goldbären</h3>
+                            <p>￦<em></em></p>
+                        </div>
+                        <div class="cart_num">
+                            <p>-</p>
+                            <p>1</p>
+                            <p>+</p>
+                        </div>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div> -->
+                </div>
+
+                <div class="cart_items" id="cart-items">
+                    <!-- 빈 장바구니 상태 -->
+                    <div class="empty_cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <p>장바구니가 비어있습니다</p>
+                        <small>상품을 담아보세요!</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart_total">
+                <h3>주문상품</h3>
+                <div>
+                    <p>총 상품금액</p>
+                    <p><em id="product_total">0</em>원</p>
+                </div>
+                <div>
+                    <p>배송비</p>
+                    <p><em id="delivery_fee">0</em>원</p>
+                </div>
+                <div>
+                    <p>결제금액</p>
+                    <p><em id="order_total">0</em>원</p>
+                </div>
+            </div>
+
+            <div class="cart_btn">
+                <button class="empty_btn">비우기</button>
+                <button class="order_btn">구매하기</button>
+            </div>
+
+        </div>
+    </header>
+
+    <div id="wrap">
+
+        <!-- 히어로 파트 -->
+        <div class="hero">
+            <!-- 슬라이더 -->
+            <div class="slider">
+                <div class="slogan">
+                    <div class="slider_img">
+                        <img src="img/bear04.png" alt="하리보 캐릭터 이미지">
+                    </div>
+                    <div class="slider_txt">
+                        <p><em>함께</em>해요 모두 다,</p>
+                        <p><em>행복</em>해요 하리보!</p>
+                    </div>
+                </div>
+                <!-- <button>버튼</button> -->
+                <ul>
+                    <li><img src="img/jelly_cola.png" alt="하리보 해피 콜라 젤리 이미지"></li>
+                    <li><img src="img/jelly_sweetlove.png" alt="하리보 스윗러브 젤리 이미지"></li>
+                    <li><img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지"></li>
+                    <li><img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지"></li>
+                    <li><img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지"></li>
+                    <li><img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지"></li>
+                    <li><img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지"></li>
+                    <li><img src="img/jelly_cola.png" alt="하리보 해피 콜라 젤리 이미지"></li>
+                    <li><img src="img/jelly_sweetlove.png" alt="하리보 스윗러브 젤리 이미지"></li>
+                    <li><img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지"></li>
+                    <li><img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지"></li>
+                    <li><img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지"></li>
+                    <li><img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지"></li>
+                    <li><img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지"></li>
+                </ul>
+                <ul>
+                    <li><img src="img/jelly_cola.png" alt="하리보 해피 콜라 젤리 이미지"></li>
+                    <li><img src="img/jelly_sweetlove.png" alt="하리보 스윗러브 젤리 이미지"></li>
+                    <li><img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지"></li>
+                    <li><img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지"></li>
+                    <li><img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지"></li>
+                    <li><img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지"></li>
+                    <li><img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지"></li>
+                    <li><img src="img/jelly_cola.png" alt="하리보 해피 콜라 젤리 이미지"></li>
+                    <li><img src="img/jelly_sweetlove.png" alt="하리보 스윗러브 젤리 이미지"></li>
+                    <li><img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지"></li>
+                    <li><img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지"></li>
+                    <li><img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지"></li>
+                    <li><img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지"></li>
+                    <li><img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지"></li>
+                </ul>
+                <div>
+                    <ul>
+                        <li><img src="img/jelly_cola.png" alt="하리보 해피 콜라 젤리 이미지"></li>
+                        <li><img src="img/jelly_sweetlove.png" alt="하리보 스윗러브 젤리 이미지"></li>
+                        <li><img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지"></li>
+                        <li><img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지"></li>
+                        <li><img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지"></li>
+                        <li><img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지"></li>
+                        <li><img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지"></li>
+                        <li><img src="img/jelly_cola.png" alt="하리보 해피 콜라 젤리 이미지"></li>
+                        <li><img src="img/jelly_sweetlove.png" alt="하리보 스윗러브 젤리 이미지"></li>
+                        <li><img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지"></li>
+                        <li><img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지"></li>
+                        <li><img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지"></li>
+                        <li><img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지"></li>
+                        <li><img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/jelly_cola.png" alt="하리보 해피 콜라 젤리 이미지"></li>
+                        <li><img src="img/jelly_sweetlove.png" alt="하리보 스윗러브 젤리 이미지"></li>
+                        <li><img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지"></li>
+                        <li><img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지"></li>
+                        <li><img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지"></li>
+                        <li><img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지"></li>
+                        <li><img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지"></li>
+                        <li><img src="img/jelly_cola.png" alt="하리보 해피 콜라 젤리 이미지"></li>
+                        <li><img src="img/jelly_sweetlove.png" alt="하리보 스윗러브 젤리 이미지"></li>
+                        <li><img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지"></li>
+                        <li><img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지"></li>
+                        <li><img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지"></li>
+                        <li><img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지"></li>
+                        <li><img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 브랜드 -->
+        <div class="brand">
+            <div class="brand_txt">
+                <h2>Brand Story</h2>
+                <p><em>100년 역사 하리보</em><br>집 뒷마당에서 세계시장 리더가 되기까지</p>
+                <img src="img/icon_bg.png" alt="">
+            </div>
+            <div class="brandStory">
+                <ul>
+                    <li>
+                        <img src="img/line01.png" alt="브랜드스토리 선 이미지">
+                        <img src="img/brand_left.png" alt="하리보 캐릭터 이미지">
+                        <img src="img/brand01.png" alt="하리보 한스 리겔 이미지">
+                        <h2>작은 사탕가게</h2>
+                        <p class="txt">
+                            한스 리겔은 1893년 본 근교에 있는 프리스도르프(Friesdorf)에서 태어났습니다. <br>
+                            그는 제과사 교육을 이수한 후에 Heinen & Riegel 회사의 공동 소유주가 됩니다. <br>
+                            1920년 12월 13일, 그는 HARIBO(HAns RIegel BOnn)를 설립하고 <br>
+                            설탕 한 자루, 석판 하나, 의자 하나, 화덕 하나, 구리 솥 하나 그리고 롤러 하나를 가지고 <br>
+                            집 뒷마당에 딸린 작은 세탁실에서 사탕류를 생산하기 시작합니다. <br>
+                            1921년 그의 아내 게르트루드가 젊은 회사의 첫 번째 직원이 됩니다.
+                        </p>
+                        <p class="year">1920</p>
+                    </li>
+
+                    <li>
+                        <img src="img/line02.png" alt="브랜드스토리 선 이미지">
+                        <img src="img/brand_right.png" alt="하리보 캐릭터 이미지">
+                        <img src="img/brand02.png" alt="1960년 골드베렌 젤리 이미지">
+                        <h2>골드베렌 탄생!</h2>
+                        <p class="txt">
+                            하리보 골드베렌 제품이 출시됩니다. <br>
+                            달콤한 골드베렌이 컬트 브랜드로 대성공을 얻게 되면서, 하리보는 골드베렌에게 공식 출생 증명서를 발급해 줍니다. <br>
+                            1967년, 골드베렌은 독일 특허청에서 공식적으로 등록상표로 인정받게 됩니다. <br>
+                            골드베렌은 단순한 젤리 곰 그 이상의 의미를 가지고 있습니다. <br>
+                            이곳에서 하리보 베스트 제품, 골드베렌에 대한 모든 것을 살펴보세요.
+                        </p>
+                        <p class="year">1960</p>
+                    </li>
+
+                    <li>
+                        <img src="img/line03.png" alt="브랜드스토리 선 이미지">
+                        <img src="img/brand_left.png" alt="하리보 캐릭터 이미지">
+                        <img src="img/brand03.png" alt="마시멜로우 젤리 캐릭터 이미지">
+                        <h2>마시멜로우 등장</h2>
+                        <p class="txt">
+                            하리보는 벨기에 제과 회사인 둘키아(Dulcia) 사를 인수합니다. <br>
+                            이 회사는 인기있는 마시멜로우 제품 Soft-Kiss, Coco-Balls 및 Rombiss를 수십 년 동안 생산해 왔습니다. <br>
+                            2007년 중반에 Dulcia라는 이름이 포장에서 사라지고 고객은 이제 슈퍼마켓에서 HARIBO Chamallows라는 이름으로 마시멜로우 제품을 찾을 수 있게
+                            됩니다.
+                        </p>
+                        <p class="year">1996</p>
+                    </li>
+
+                    <li>
+                        <img src="img/line02.png" alt="브랜드스토리 선 이미지">
+                        <img src="img/brand_right.png" alt="하리보 캐릭터 이미지">
+                        <img src="img/brand04.png" alt="85주년 광고 이미지">
+                        <h2>85주년 하리보 골드베렌</h2>
+                        <p class="txt">
+                            85주년을 맞은 골드베렌이 새로운 맛과 포장 디자인 그리고 변함없는 행복한 미소를 담아 다시 탄생하게 됩니다. <br>
+                            그리고 여섯 번째 맛으로 “사과”가 추가됩니다. <br>
+                            이를 통해 소비자들에게 즐거움이 더해졌습니다. <br>
+                            골드베렌이 더 풍성해졌어요!
+                        </p>
+                        <p class="year">2007</p>
+                    </li>
+
+                    <li>
+                        <img src="img/line03.png" alt="브랜드스토리 선 이미지">
+                        <img src="img/brand_left.png" alt="하리보 캐릭터 이미지">
+                        <img src="img/brand05.png" alt="하리보 독일본사 이미지">
+                        <h2>대규모 이전</h2>
+                        <p class="txt">
+                            5월 2일, 직원들은 새로운 독일 본사이자 하리보 그룹의 국제본사인 <br>
+                            그라프샤프트에서 첫 업무를 시작합니다. <br>
+                            한스 귀도 리겔: "우리와 하리보를 위한 큰 도약이자 회사 역사의 또 다른 중요한 이정표입니다.”라며 <br>
+                            다음과 같이 덧붙입니다. <br>
+                            "본은 영원히 하리보의 일부로 남아 있을 것입니다.”
+                        </p>
+                        <p class="year">2018</p>
+                    </li>
+
+                    <li>
+                        <img src="img/line02.png" alt="브랜드스토리 선 이미지">
+                        <img src="img/brand_right.png" alt="하리보 캐릭터 이미지">
+                        <img src="img/brand06.png" alt="하리보 100주년 기념 이미지">
+                        <h2>하리보: 100년 된 젊은 하리보</h2>
+                        <p class="txt">
+                            3세대 동안 이어진 가족기업이 2020년 12월 13일에 창립 100주년을 맞이합니다. <br>
+                            100년 동안 하리보 제품은 달콤한 간식과 함께 소소한 행복을 전해 드리고 있습니다. <br>
+                            100주년을 기념하여 매력적인 하리보의 역사를 되돌아보고 무엇보다 미래지향적인 모습으로 소비자들과 함께 <br>
+                            "100년의 행복을 함께해요"라는 슬로건으로 축하하고 있습니다.
+                        </p>
+                        <p class="year">2020</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 프로덕트 -->
+        <div class="product">
+            <div class="product_txt">
+                <h2>Product</h2>
+                <p>1992년부터 <em>독보적인 젤리!</em></p>
+            </div>
+
+            <div class="product_img">
+                <ul>
+                    <li>
+                        <img src="img/jelly_goldbaeren.png" alt="골드베렌 젤리 이미지">
+                        <img src="img/mini_01.png" alt="골드베렌 젤리 미니 이미지" width="30px">
+                        <img src="img/mini_02.png" alt="골드베렌 젤리 미니 이미지" width="30px">
+                        <img src="img/mini_03.png" alt="골드베렌 젤리 미니 이미지" width="30px">
+                        <img src="img/mini_04.png" alt="골드베렌 젤리 미니 이미지" width="30px">
+                        <img src="img/mini_05.png" alt="골드베렌 젤리 미니 이미지" width="30px">
+                        <img src="img/mini_06.png" alt="골드베렌 젤리 미니 이미지" width="30px">
+                        <a href=""><span class="more_btn"></span></a>
+                        <a href=""><span class="shop_btn"></span></a>
+                        <p>
+                            <em>Goldbären</em>
+                            #사과맛 #딸기맛 #라즈베리맛 <br> #오렌지맛 #레몬맛 #파인애플
+                        </p>
+                    </li>
+
+                    <li>
+                        <img src="img/jelly_fruity.png" alt="프루티 젤리 이미지">
+                        <img src="img/mini_18.png" alt="프루티 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_19.png" alt="프루티 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_20.png" alt="프루티 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_18.png" alt="프루티 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_19.png" alt="프루티 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_20.png" alt="프루티 젤리 미니 이미지" width="50px">
+                        <a href=""><span class="more_btn"></span></a>
+                        <a href=""><span class="shop_btn"></span></a>
+                        <p>
+                            <em>Fruity Bussi</em>
+                            #마시멜로우 #과일젤리 #라즈베리맛 <br> #망고맛 #오렌지맛 #복숭아맛 #살구맛
+                        </p>
+                    </li>
+
+                    <li>
+                        <img src="img/jelly_starmix.png" alt="스타믹스 젤리 이미지">
+                        <img src="img/mini_10.png" alt="스타믹스 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_11.png" alt="스타믹스 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_12.png" alt="스타믹스 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_13.png" alt="스타믹스 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_14.png" alt="스타믹스 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_15.png" alt="스타믹스 젤리 미니 이미지" width="50px">
+                        <a href=""><span class="more_btn"></span></a>
+                        <a href=""><span class="shop_btn"></span></a>
+                        <p>
+                            <em>Starmix</em>
+                            #우주탐험 #마시멜로우하트 <br> #과일젤리 #우정반지 #골드베렌
+                        </p>
+                    </li>
+
+                    <li>
+                        <img src="img/jelly_grapes.png" alt="그레이프 젤리 이미지">
+                        <img src="img/mini_21.png" alt="그레이프 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_22.png" alt="그레이프 젤리 미니 이미지" width="55px">
+                        <img src="img/mini_23.png" alt="그레이프 젤리 미니 이미지" width="40px">
+                        <img src="img/mini_21.png" alt="그레이프 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_22.png" alt="그레이프 젤리 미니 이미지" width="55px">
+                        <img src="img/mini_23.png" alt="그레이프 젤리 미니 이미지" width="40px">
+                        <a href=""><span class="more_btn"></span></a>
+                        <a href=""><span class="shop_btn"></span></a>
+                        <p>
+                            <em>Happy Grapes</em>
+                            #포도 #청포도 <br> #달콤함 #새콤달콤 #상큼함
+                        </p>
+                    </li>
+
+                    <li>
+                        <img src="img/jelly_worms.png" alt="웜즈 젤리 이미지">
+                        <img src="img/mini_24.png" alt="웜즈 젤리 미니 이미지" width="40px">
+                        <img src="img/mini_25.png" alt="웜즈 젤리 미니 이미지" width="60px">
+                        <img src="img/mini_26.png" alt="웜즈 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_24.png" alt="웜즈 젤리 미니 이미지" width="40px">
+                        <img src="img/mini_25.png" alt="웜즈 젤리 미니 이미지" width="60px">
+                        <img src="img/mini_26.png" alt="웜즈 젤리 미니 이미지" width="50px">
+                        <a href=""><span class="more_btn"></span></a>
+                        <a href=""><span class="shop_btn"></span></a>
+                        <p>
+                            <em>Worms</em>
+                            #딸기-파인애플 #오렌지-살구 <br> #라즈베리-레몬
+                        </p>
+                    </li>
+
+                    <li>
+                        <img src="img/jelly_wormszourr.png" alt="웜즈사워 젤리 이미지">
+                        <img src="img/mini_07.png" alt="웜즈사워 젤리 미니 이미지" width="40px">
+                        <img src="img/mini_08.png" alt="웜즈사워 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_09.png" alt="웜즈사워 젤리 미니 이미지" width="60px">
+                        <img src="img/mini_07.png" alt="웜즈사워 젤리 미니 이미지" width="40px">
+                        <img src="img/mini_08.png" alt="웜즈사워 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_09.png" alt="웜즈사워 젤리 미니 이미지" width="60px">
+                        <a href=""><span class="more_btn"></span></a>
+                        <a href=""><span class="shop_btn"></span></a>
+                        <p>
+                            <em>Worms Zourr</em>
+                            #짜릿한 신맛 #딸기-파인애플 <br> #오렌지-살구 #라즈베리-레몬
+                        </p>
+                    </li>
+
+                    <li>
+                        <img src="img/jelly_cola.png" alt="콜라 젤리 이미지">
+                        <img src="img/mini_17.png" alt="콜라 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_17.png" alt="콜라 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_17.png" alt="콜라 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_17.png" alt="콜라 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_17.png" alt="콜라 젤리 미니 이미지" width="50px">
+                        <img src="img/mini_17.png" alt="콜라 젤리 미니 이미지" width="50px">
+                        <a href=""><span class="more_btn"></span></a>
+                        <a href=""><span class="shop_btn"></span></a>
+                        <p>
+                            <em>Happy-Cola</em>
+                            #콜라맛
+                        </p>
+                    </li>
+
+                    <li>
+                        <img src="img/jelly_colazourr.png" alt="콜라사워 젤리 이미지">
+                        <img src="img/mini_16.png" alt="콜라사워 젤리 미니 이미지" width="70px">
+                        <img src="img/mini_16.png" alt="콜라사워 젤리 미니 이미지" width="70px">
+                        <img src="img/mini_16.png" alt="콜라사워 젤리 미니 이미지" width="70px">
+                        <img src="img/mini_16.png" alt="콜라사워 젤리 미니 이미지" width="70px">
+                        <img src="img/mini_16.png" alt="콜라사워 젤리 미니 이미지" width="70px">
+                        <img src="img/mini_16.png" alt="콜라사워 젤리 미니 이미지" width="70px">
+                        <a href=""><span class="more_btn"></span></a>
+                        <a href=""><span class="shop_btn"></span></a>
+                        <p>
+                            <em>Happy Cola Zourr</em>
+                            #짜릿한 신맛 #콜라맛
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 텍스트(좌우로 움직이는) -->
+        <div class="text">
+            <div>
+                <ul>
+                    <li><img src="img/text01.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text02.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text01.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text02.png" alt="HARIBO 텍스트"></li>
+                </ul>
+                <ul>
+                    <li><img src="img/text01.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text02.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text01.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text02.png" alt="HARIBO 텍스트"></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><img src="img/text04.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text03.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text04.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text03.png" alt="HARIBO 텍스트"></li>
+                </ul>
+                <ul>
+                    <li><img src="img/text04.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text03.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text04.png" alt="HARIBO 텍스트"></li>
+                    <li><img src="img/text03.png" alt="HARIBO 텍스트"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 프로모션 -->
+        <div class="promotion">
+            <div class="promotion_txt">
+                <h2>Promotion</h2>
+                <p>하리보의 <em>신상품</em>들을 소개합니다!</p>
+            </div>
+
+            <div class="promotion_img">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="img/jelly_blueraspberry.png" alt="하리보 블루라즈베리 젤리 이미지">
+                            <div class="promotion_1">
+                                <img src="img/promotion_bg.png" alt="젤리 설명 배경화면">
+                                <h3>BlueRaspberry</h3>
+                                <p>파란색의 컬러와 함께 진짜 베리의 풍미를 경험</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/jelly_chamallows.png" alt="하리보 초코마시멜로우 젤리 이미지">
+                            <div class="promotion_2">
+                                <img src="img/promotion_bg.png" alt="젤리 설명 배경화면">
+                                <h3>Chamallows</h3>
+                                <p>부드럽고 폭신한 마시멜로 질감의 달콤한 젤리</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="img/jelly_erdbeeren.png" alt="하리보 erdbeeren 젤리 이미지">
+                            <div class="promotion_3">
+                                <img src="img/promotion_bg.png" alt="젤리 설명 배경화면">
+                                <h3>Erdbeeren</h3>
+                                <p>상큼달콤한 딸기 맛의 쫄깃한 젤리 캔디</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/jelly_sweetlove.png" alt="하리보 스윗러브 젤리 이미지">
+                            <div class="promotion_4">
+                                <img src="img/promotion_bg.png" alt="젤리 설명 배경화면">
+                                <h3>SweetLove</h3>
+                                <p>달콤한 하트 모양의 로맨틱한 젤리 캔디</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="img/jelly_milchbaren.png" alt="하리보 밀크베어 젤리 이미지">
+                            <div class="promotion_5">
+                                <img src="img/promotion_bg.png" alt="젤리 설명 배경화면">
+                                <h3>Milchbaren</h3>
+                                <p>부드러운 밀크 맛의 곰 모양 젤리 캔디</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/jelly_supermario.png" alt="하리보 슈퍼마리오 젤리 이미지">
+                            <div class="promotion_6">
+                                <img src="img/promotion_bg.png" alt="젤리 설명 배경화면">
+                                <h3>SuperMario</h3>
+                                <p>마리오 캐릭터 모양의 다양한 맛 젤리 캔디</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="promotion_btn">
+                    <ul>
+                        <li>
+                            <p>◀</p>
+                        </li>
+                        <li>
+                            <p>▶</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slider_btn">
+                <ul>
+                    <li class="on">슬라이더버튼1</li>
+                    <li>슬라이더버튼2</li>
+                    <li>슬라이더버튼3</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 비디오 -->
+        <div class="video">
+            <video autoplay muted loop>
+                <source src="img/haribo_video.mp4" type="video/mp4">
+            </video>
+
+            <div class="video_txt">
+                <p>HARIBO</p>
+                <p>HAR</p>
+                <p>IBO</p>
+            </div>
+        </div>
+
+        <!-- 리뷰 -->
+        <div class="review">
+            <div class="review_txt">
+                <h2>Review</h2>
+                <p><em>소중한 고객님</em>들이 남겨주신 <em>리뷰</em>입니다!</p>
+            </div>
+
+            <div class="review_img">
+                <ul>
+                    <li>
+                        <a href="">
+                            <p>골드베어는 역시 최고예요! <em>2025.08.15</em></p>
+                            <p>
+                                어렸을 때부터 먹던 그 맛 그대로네요. <br>
+                                쫄깃하고 달콤한 맛이 일품이에요. <br>
+                                스트레스 받을 때 하나씩 먹으면 기분이 금세 좋아져요.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>아이들이 너무 좋아해요 <em>2025.07.28</em></p>
+                            <p>
+                                5살, 8살 아이들 간식으로 주문했는데 하루 만에 다 먹어버렸어요. <br>
+                                색깔도 예쁘고 곰돌이 모양이 귀여워서 아이들이 정말 좋아해요.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="on">
+                        <a href="">
+                            <p>독일 정통 젤리의 맛! <em>2025.09.02</em></p>
+                            <p>
+                                다른 젤리와는 확실히 다른 진짜 하리보만의 맛과 식감이에요. <br>
+                                한 번 먹으면 계속 손이 가는 중독성 있는 맛이에요.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>사무실 간식으로 최고! <em>2025.08.20</em></p>
+                            <p>
+                                동료들과 나눠 먹으려고 샀는데 모두 맛있다고 하네요. <br>
+                                달콤한 젤리 하나로 오후 업무 스트레스가 확 풀려요.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>선물용으로도 정말 좋아요 <em>2025.07.10</em></p>
+                            <p>
+                                친구 생일선물로 예쁜 포장해서 줬더니 너무 좋아했어요. <br>
+                                하리보는 누구나 좋아하는 안전한 선택인 것 같아요.
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="review_btn">
+                <p>◀</p>
+                <p>▶</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 서브페이지(프로덕트) 설정 -->
+    <!-- 골드베렌 -->
+    <div id="sub_product_01">
+        <div class="title">
+            <h2>Products</h2>
+        </div>
+        <div class="jelly">
+            <ul>
+                <li>
+                    <p>(판매가: ￦2,000)</p>
+                    <h3>
+                        <img src="img/sub_product_01.png" alt="골드베렌">
+                        달콤 깜찍한 골드베렌!
+                    </h3>
+                    <div class="nutrition">
+                        <ul>
+                            <li>
+                                <p>영양정보</p>
+                                <p>100g당</p>
+                            </li>
+                            <li>
+                                <p>열량</p>
+                                <p>338kcal</p>
+                            </li>
+                            <li>
+                                <p>지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>포화지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>탄수화물</p>
+                                <p>77.4g</p>
+                            </li>
+                            <li>
+                                <p>당류</p>
+                                <p>45.6g</p>
+                            </li>
+                            <li>
+                                <p>단백질</p>
+                                <p>6.9g</p>
+                            </li>
+                            <li>
+                                <p>나트륨</p>
+                                <p>30mg</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/jelly_goldbaeren.png" alt="골드베렌 젤리 이미지">
+                    <img src="img/jelly_back_goldbaren.png" alt="골드베렌 젤리 뒷면 이미지">
+                </li>
+
+                <li>
+                    <ul>
+                        <li>
+                            <div class="price">
+                                <p>￦2,000</p>
+                                <div>
+                                    <p>-</p>
+                                    <p>1</p>
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="cart"><a href="">ADD TO CART</a></p>
+                        </li>
+                        <li>
+                            <p class="recommend_txt">추천상품</p>
+                            <div class="recommend">
+                                <ul>
+                                    <li>
+                                        <img src="img/sub_product_btn_l.png" alt="추천상품 왼쪽 버튼">
+                                    </li>
+                                    <li>
+                                        <div class="recommend_jelly">
+                                            <img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지">
+                                            <img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지">
+                                            <img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지">
+                                            <img src="img/jelly_cola.png" alt="하리보 콜라 젤리 이미지">
+                                            <img src="img/jelly_colazourr.png" alt="하리보 콜라사워 젤리 이미지">
+                                            <img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="img/sub_product_btn_r.png" alt="추천상품 오른쪽 버튼">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 프루티 -->
+    <div id="sub_product_02">
+        <div class="title">
+            <h2>Products</h2>
+        </div>
+        <div class="jelly">
+            <ul>
+                <li>
+                    <p>(판매가: ￦2,000)</p>
+                    <h3>
+                        <img src="img/sub_product_02.png" alt="프루티">
+                        여기도 쪽쪽, 저기도 쪽쪽!
+                    </h3>
+                    <div class="nutrition">
+                        <ul>
+                            <li>
+                                <p>영양정보</p>
+                                <p>100g당</p>
+                            </li>
+                            <li>
+                                <p>열량</p>
+                                <p>331kcal</p>
+                            </li>
+                            <li>
+                                <p>지방</p>
+                                <p>0.2g</p>
+                            </li>
+                            <li>
+                                <p>포화지방</p>
+                                <p>0.2g</p>
+                            </li>
+                            <li>
+                                <p>탄수화물</p>
+                                <p>77.5g</p>
+                            </li>
+                            <li>
+                                <p>당류</p>
+                                <p>55.5g</p>
+                            </li>
+                            <li>
+                                <p>단백질</p>
+                                <p>4.7g</p>
+                            </li>
+                            <li>
+                                <p>나트륨</p>
+                                <p>20mg</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지">
+                    <img src="img/jelly_back_fruity.png" alt="하리보 프루티 젤리 뒷면 이미지">
+                </li>
+
+                <li>
+                    <ul>
+                        <li>
+                            <div class="price">
+                                <p>￦2,000</p>
+                                <div>
+                                    <p>-</p>
+                                    <p>1</p>
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="cart"><a href="">ADD TO CART</a></p>
+                        </li>
+                        <li>
+                            <p class="recommend_txt">추천상품</p>
+                            <div class="recommend">
+                                <ul>
+                                    <li>
+                                        <img src="img/sub_product_btn_l.png" alt="추천상품 왼쪽 버튼">
+                                    </li>
+                                    <li>
+                                        <div class="recommend_jelly">
+                                            <img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지">
+                                            <img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지">
+                                            <img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지">
+                                            <img src="img/jelly_cola.png" alt="하리보 콜라 젤리 이미지">
+                                            <img src="img/jelly_colazourr.png" alt="하리보 콜라사워 젤리 이미지">
+                                            <img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="img/sub_product_btn_r.png" alt="추천상품 오른쪽 버튼">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 스타믹스 -->
+    <div id="sub_product_03">
+        <div class="title">
+            <h2>Products</h2>
+        </div>
+        <div class="jelly">
+            <ul>
+                <li>
+                    <p>(판매가: ￦2,000)</p>
+                    <h3>
+                        <img src="img/sub_product_03.png" alt="스타믹스">
+                        과일젤리로 만든 무한한 세계로 출발!
+                    </h3>
+                    <div class="nutrition">
+                        <ul>
+                            <li>
+                                <p>영양정보</p>
+                                <p>100g당</p>
+                            </li>
+                            <li>
+                                <p>열량</p>
+                                <p>337kcal</p>
+                            </li>
+                            <li>
+                                <p>지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>포화지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>탄수화물</p>
+                                <p>77.4g</p>
+                            </li>
+                            <li>
+                                <p>당류</p>
+                                <p>47.2g</p>
+                            </li>
+                            <li>
+                                <p>단백질</p>
+                                <p>6.6g</p>
+                            </li>
+                            <li>
+                                <p>나트륨</p>
+                                <p>10mg</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지">
+                    <img src="img/jelly_back_Starmix.png" alt="하리보 스타믹스 젤리 뒷면 이미지">
+                </li>
+
+                <li>
+                    <ul>
+                        <li>
+                            <div class="price">
+                                <p>￦2,000</p>
+                                <div>
+                                    <p>-</p>
+                                    <p>1</p>
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="cart"><a href="">ADD TO CART</a></p>
+                        </li>
+                        <li>
+                            <p class="recommend_txt">추천상품</p>
+                            <div class="recommend">
+                                <ul>
+                                    <li>
+                                        <img src="img/sub_product_btn_l.png" alt="추천상품 왼쪽 버튼">
+                                    </li>
+                                    <li>
+                                        <div class="recommend_jelly">
+                                            <img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지">
+                                            <img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지">
+                                            <img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지">
+                                            <img src="img/jelly_cola.png" alt="하리보 콜라 젤리 이미지">
+                                            <img src="img/jelly_colazourr.png" alt="하리보 콜라사워 젤리 이미지">
+                                            <img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="img/sub_product_btn_r.png" alt="추천상품 오른쪽 버튼">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 그레이프 -->
+    <div id="sub_product_04">
+        <div class="title">
+            <h2>Products</h2>
+        </div>
+        <div class="jelly">
+            <ul>
+                <li>
+                    <p>(판매가: ￦2,000)</p>
+                    <h3>
+                        <img src="img/sub_product_04.png" alt="그레이프">
+                        세 가지 포도 맛을 한 번에!
+                    </h3>
+                    <div class="nutrition">
+                        <ul>
+                            <li>
+                                <p>영양정보</p>
+                                <p>100g당</p>
+                            </li>
+                            <li>
+                                <p>열량</p>
+                                <p>335kcal</p>
+                            </li>
+                            <li>
+                                <p>지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>포화지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>탄수화물</p>
+                                <p>77.7g</p>
+                            </li>
+                            <li>
+                                <p>당류</p>
+                                <p>45.5g</p>
+                            </li>
+                            <li>
+                                <p>단백질</p>
+                                <p>5.8g</p>
+                            </li>
+                            <li>
+                                <p>나트륨</p>
+                                <p>32mg</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지">
+                    <img src="img/jelly_back_grapes.jpg" alt="하리보 그레이프 젤리 뒷면 이미지">
+                </li>
+
+                <li>
+                    <ul>
+                        <li>
+                            <div class="price">
+                                <p>￦2,000</p>
+                                <div>
+                                    <p>-</p>
+                                    <p>1</p>
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="cart"><a href="">ADD TO CART</a></p>
+                        </li>
+                        <li>
+                            <p class="recommend_txt">추천상품</p>
+                            <div class="recommend">
+                                <ul>
+                                    <li>
+                                        <img src="img/sub_product_btn_l.png" alt="추천상품 왼쪽 버튼">
+                                    </li>
+                                    <li>
+                                        <div class="recommend_jelly">
+                                            <img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지">
+                                            <img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지">
+                                            <img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지">
+                                            <img src="img/jelly_cola.png" alt="하리보 콜라 젤리 이미지">
+                                            <img src="img/jelly_colazourr.png" alt="하리보 콜라사워 젤리 이미지">
+                                            <img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="img/sub_product_btn_r.png" alt="추천상품 오른쪽 버튼">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 웜즈 -->
+    <div id="sub_product_05">
+        <div class="title">
+            <h2>Products</h2>
+        </div>
+        <div class="jelly">
+            <ul>
+                <li>
+                    <p>(판매가: ￦2,000)</p>
+                    <h3>
+                        <img src="img/sub_product_05.png" alt="웜즈">
+                        재미있는 지렁이 모양 속에 두 가지 과일 맛이 쏙!
+                    </h3>
+                    <div class="nutrition">
+                        <ul>
+                            <li>
+                                <p>영양정보</p>
+                                <p>100g당</p>
+                            </li>
+                            <li>
+                                <p>열량</p>
+                                <p>337kcal</p>
+                            </li>
+                            <li>
+                                <p>지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>포화지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>탄수화물</p>
+                                <p>76.4g</p>
+                            </li>
+                            <li>
+                                <p>당류</p>
+                                <p>47.9g</p>
+                            </li>
+                            <li>
+                                <p>단백질</p>
+                                <p>7.5g</p>
+                            </li>
+                            <li>
+                                <p>나트륨</p>
+                                <p>20mg</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지">
+                    <img src="img/jelly_back_worms.png" alt="하리보 웜즈 젤리 뒷면 이미지">
+                </li>
+
+                <li>
+                    <ul>
+                        <li>
+                            <div class="price">
+                                <p>￦2,000</p>
+                                <div>
+                                    <p>-</p>
+                                    <p>1</p>
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="cart"><a href="">ADD TO CART</a></p>
+                        </li>
+                        <li>
+                            <p class="recommend_txt">추천상품</p>
+                            <div class="recommend">
+                                <ul>
+                                    <li>
+                                        <img src="img/sub_product_btn_l.png" alt="추천상품 왼쪽 버튼">
+                                    </li>
+                                    <li>
+                                        <div class="recommend_jelly">
+                                            <img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지">
+                                            <img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지">
+                                            <img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지">
+                                            <img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지">
+                                            <img src="img/jelly_cola.png" alt="하리보 콜라 젤리 이미지">
+                                            <img src="img/jelly_colazourr.png" alt="하리보 콜라사워 젤리 이미지">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="img/sub_product_btn_r.png" alt="추천상품 오른쪽 버튼">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 웜즈사워 -->
+    <div id="sub_product_06">
+        <div class="title">
+            <h2>Products</h2>
+        </div>
+        <div class="jelly">
+            <ul>
+                <li>
+                    <p>(판매가: ￦2,000)</p>
+                    <h3>
+                        <img src="img/sub_product_06.png" alt="웜즈사워">
+                        처음부터 끝까지 짜릿한 새콤젤리!
+                    </h3>
+                    <div class="nutrition">
+                        <ul>
+                            <li>
+                                <p>영양정보</p>
+                                <p>100g당</p>
+                            </li>
+                            <li>
+                                <p>열량</p>
+                                <p>361kcal</p>
+                            </li>
+                            <li>
+                                <p>지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>포화지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>탄수화물</p>
+                                <p>84g</p>
+                            </li>
+                            <li>
+                                <p>당류</p>
+                                <p>54g</p>
+                            </li>
+                            <li>
+                                <p>단백질</p>
+                                <p>6.0g</p>
+                            </li>
+                            <li>
+                                <p>나트륨</p>
+                                <p>27mg</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/jelly_wormszourr.png" alt="하리보 웜즈사워 젤리 이미지">
+                    <img src="img/jelly_back_wormszourr.png" alt="하리보 웜즈사워 젤리 뒷면 이미지">
+                </li>
+
+                <li>
+                    <ul>
+                        <li>
+                            <div class="price">
+                                <p>￦2,000</p>
+                                <div>
+                                    <p>-</p>
+                                    <p>1</p>
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="cart"><a href="">ADD TO CART</a></p>
+                        </li>
+                        <li>
+                            <p class="recommend_txt">추천상품</p>
+                            <div class="recommend">
+                                <ul>
+                                    <li>
+                                        <img src="img/sub_product_btn_l.png" alt="추천상품 왼쪽 버튼">
+                                    </li>
+                                    <li>
+                                        <div class="recommend_jelly">
+                                            <img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지">
+                                            <img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지">
+                                            <img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지">
+                                            <img src="img/jelly_cola.png" alt="하리보 콜라 젤리 이미지">
+                                            <img src="img/jelly_colazourr.png" alt="하리보 콜라사워 젤리 이미지">
+                                            <img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="img/sub_product_btn_r.png" alt="추천상품 오른쪽 버튼">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 콜라 -->
+    <div id="sub_product_07">
+        <div class="title">
+            <h2>Products</h2>
+        </div>
+        <div class="jelly">
+            <ul>
+                <li>
+                    <p>(판매가: ￦2,000)</p>
+                    <h3>
+                        <img src="img/sub_product_07.png" alt="콜라">
+                        콜라 맛 그대로 해피콜라!
+                    </h3>
+                    <div class="nutrition">
+                        <ul>
+                            <li>
+                                <p>영양정보</p>
+                                <p>100g당</p>
+                            </li>
+                            <li>
+                                <p>열량</p>
+                                <p>338kcal</p>
+                            </li>
+                            <li>
+                                <p>지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>포화지방</p>
+                                <p>0.1g</p>
+                            </li>
+                            <li>
+                                <p>탄수화물</p>
+                                <p>77.4g</p>
+                            </li>
+                            <li>
+                                <p>당류</p>
+                                <p>45.6g</p>
+                            </li>
+                            <li>
+                                <p>단백질</p>
+                                <p>6.9g</p>
+                            </li>
+                            <li>
+                                <p>나트륨</p>
+                                <p>30mg</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/jelly_cola.png" alt="하리보 콜라 젤리 이미지">
+                    <img src="img/jelly_back_cola.png" alt="하리보 콜라 젤리 뒷면 이미지">
+                </li>
+
+                <li>
+                    <ul>
+                        <li>
+                            <div class="price">
+                                <p>￦2,000</p>
+                                <div>
+                                    <p>-</p>
+                                    <p>1</p>
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="cart"><a href="">ADD TO CART</a></p>
+                        </li>
+                        <li>
+                            <p class="recommend_txt">추천상품</p>
+                            <div class="recommend">
+                                <ul>
+                                    <li>
+                                        <img src="img/sub_product_btn_l.png" alt="추천상품 왼쪽 버튼">
+                                    </li>
+                                    <li>
+                                        <div class="recommend_jelly">
+                                            <img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지">
+                                            <img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지">
+                                            <img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지">
+                                            <img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지">
+                                            <img src="img/jelly_colazourr.png" alt="하리보 콜라사워 젤리 이미지">
+                                            <img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="img/sub_product_btn_r.png" alt="추천상품 오른쪽 버튼">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 콜라사워 -->
+    <div id="sub_product_08">
+        <div class="title">
+            <h2>Products</h2>
+        </div>
+        <div class="jelly">
+            <ul>
+                <li>
+                    <p>(판매가: ￦2,000)</p>
+                    <h3>
+                        <img src="img/sub_product_08.png" alt="콜라사워">
+                        엄마, 콜라가 너무 셔요!
+                    </h3>
+                    <div class="nutrition">
+                        <ul>
+                            <li>
+                                <p>영양정보</p>
+                                <p>100g당</p>
+                            </li>
+                            <li>
+                                <p>열량</p>
+                                <p>340kcal</p>
+                            </li>
+                            <li>
+                                <p>지방</p>
+                                <p>0g</p>
+                            </li>
+                            <li>
+                                <p>포화지방</p>
+                                <p>0g</p>
+                            </li>
+                            <li>
+                                <p>탄수화물</p>
+                                <p>78g</p>
+                            </li>
+                            <li>
+                                <p>당류</p>
+                                <p>52g</p>
+                            </li>
+                            <li>
+                                <p>단백질</p>
+                                <p>7g</p>
+                            </li>
+                            <li>
+                                <p>나트륨</p>
+                                <p>20mg</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/jelly_colazourr.png" alt="하리보 콜라사워 젤리 이미지">
+                    <img src="img/jelly_back_colazourr.jpg" alt="하리보 콜라사워 젤리 뒷면 이미지">
+                </li>
+
+                <li>
+                    <ul>
+                        <li>
+                            <div class="price">
+                                <p>￦2,000</p>
+                                <div>
+                                    <p>-</p>
+                                    <p>1</p>
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="cart"><a href="">ADD TO CART</a></p>
+                        </li>
+                        <li>
+                            <p class="recommend_txt">추천상품</p>
+                            <div class="recommend">
+                                <ul>
+                                    <li>
+                                        <img src="img/sub_product_btn_l.png" alt="추천상품 왼쪽 버튼">
+                                    </li>
+                                    <li>
+                                        <div class="recommend_jelly">
+                                            <img src="img/jelly_goldbaeren.png" alt="하리보 골드베렌 젤리 이미지">
+                                            <img src="img/jelly_fruity.png" alt="하리보 프루티 젤리 이미지">
+                                            <img src="img/jelly_starmix.png" alt="하리보 스타믹스 젤리 이미지">
+                                            <img src="img/jelly_grapes.png" alt="하리보 그레이프 젤리 이미지">
+                                            <img src="img/jelly_cola.png" alt="하리보 콜라 젤리 이미지">
+                                            <img src="img/jelly_worms.png" alt="하리보 웜즈 젤리 이미지">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="img/sub_product_btn_r.png" alt="추천상품 오른쪽 버튼">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 서브페이지(로그인) 설정 -->
+    <div id="login">
+        <div class="login_img">
+            <img src="img/logo.png" alt="하리보 로고" width="600px">
+        </div>
+        <div class="login_txt">
+            <ul>
+                <li>
+                    <img src="img/login_id.png" alt="아이디">
+                    <div>
+                        <p>아이디</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/login_password.png" alt="패스워드">
+                    <div>
+                        <p>비밀번호</p>
+                    </div>
+                </li>
+                <li>
+                    <p>로그인</p>
+                </li>
+                <li>
+                    <p>회원가입</p>
+                    <p>아이디/비밀번호 찾기</p>
+                </li>
+                <li>
+                    <!-- <img src="img/login_naver.png" alt="네이버 로그인"> -->
+                    <div id="naverIdLogin"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js"
+        charset="utf-8"></script>
+    <script type="text/javascript">
+        var naverLogin = new naver.LoginWithNaverId({
+            clientId: "CkVFv7cG0XXfdluPkezq", // 여기에 클라이언트 ID 입력
+            callbackUrl: "YOUR_CALLBACK_URL", // 콜백 URL 입력
+            isPopup: true, // 팝업을 통한 연동처리 여부
+            loginButton: { color: "white", type: 3, height: 60 } // 로그인 버튼의 타입을 지정
+        });
+
+        naverLogin.init();
+    </script>
+
+    <style>
+        #naverIdLogin {
+            text-align: center;
+        }
+    </style>
+
+    <!-- 푸터 -->
+    <footer>
+        <div>
+            <p>
+                본 페이지는 포트폴리오용으로 제작된 사이트입니다. <br>
+                해당사이트의 이미지와 동영상 기타 상세내용은 상업용으로 사용하지 않습니다.
+            </p>
+            <p>Copyright ⓒ 2025.sj.All Rights Reserved.</p>
+        </div>
+
+        <img src="img/bear02.png" alt="하리보 캐릭터">
+    </footer>
+
+</body>
+
+</html>
