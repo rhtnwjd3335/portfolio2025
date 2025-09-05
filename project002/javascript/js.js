@@ -333,7 +333,7 @@ $(document).ready(function () {
                             <img src="${proImg}" alt="">
                             <div class="cart_menu">
                                 <h3>${proTxt}</h3>
-                                <p>￦<em>${}</em></p>
+                                <p>￦<em>${cNum * 2000}</em></p>
                             </div>
                             <div class="cart_num">
                                 <p>-</p>
