@@ -225,7 +225,12 @@ $(document).ready(function () {
 
         else {
             // shopNum 개수에 따라, 총 상품금액이 달라져라
-            let product_total = shopNum * 2000;
+            // let product_total = shopNum * 2000;
+            // $('#product_total').text(product_total);
+            let product_total = 0;
+            $('.cart_sub em').each(function () {
+                product_total += parseInt($(this).text());
+            });
             $('#product_total').text(product_total);
 
             // 배송비: 5만원 이상이면 배송비 무료, 5만원 미만이면 배송비 3000원
@@ -295,6 +300,29 @@ $(document).ready(function () {
             cNum--;
 
             $(this).siblings('p:nth-child(2)').text(cNum);
+
+            let itemPrice = cNum * 2000;
+            $(this).closest('.cart_sub').find('em').text(itemPrice);
+
+            // 전체 총액 재계산
+            let product_total = 0;
+            $('.cart_sub em').each(function () {
+                product_total += parseInt($(this).text());
+            });
+            $('#product_total').text(product_total);
+
+            // 배송비: 5만원 이상이면 배송비 무료, 5만원 미만이면 배송비 3000원
+            let delivery_fee;
+            if (product_total >= 50000) {
+                delivery_fee = 0;
+            } else {
+                delivery_fee = 3000;
+            }
+            $('#delivery_fee').text(delivery_fee);
+
+            // 총 상품금액 + 배송비의 값을 결제금액에 넣어라
+            let order_total = product_total + delivery_fee;
+            $('#order_total').text(order_total);
         }
     });
 
@@ -304,6 +332,29 @@ $(document).ready(function () {
         cNum++;
 
         $(this).siblings('p:nth-child(2)').text(cNum);
+
+        let itemPrice = cNum * 2000;
+        $(this).closest('.cart_sub').find('em').text(itemPrice);
+
+        // 전체 총액 재계산
+            let product_total = 0;
+            $('.cart_sub em').each(function () {
+                product_total += parseInt($(this).text());
+            });
+            $('#product_total').text(product_total);
+
+            // 배송비: 5만원 이상이면 배송비 무료, 5만원 미만이면 배송비 3000원
+            let delivery_fee;
+            if (product_total >= 50000) {
+                delivery_fee = 0;
+            } else {
+                delivery_fee = 3000;
+            }
+            $('#delivery_fee').text(delivery_fee);
+
+            // 총 상품금액 + 배송비의 값을 결제금액에 넣어라
+            let order_total = product_total + delivery_fee;
+            $('#order_total').text(order_total);
     });
 
 
@@ -325,15 +376,13 @@ $(document).ready(function () {
         let proTxt = $(this).closest('li').find('em').text();
         console.log(proTxt);
 
-        // 
-
 
         // shop에 들어갈 cart_product 설정
         let cart_plus = `<div class="cart_sub">
                             <img src="${proImg}" alt="">
                             <div class="cart_menu">
                                 <h3>${proTxt}</h3>
-                                <p>￦<em>${cNum * 2000 + 2000}</em></p>
+                                <p>￦<em>2000</em></p>
                             </div>
                             <div class="cart_num">
                                 <p>-</p>
@@ -353,7 +402,10 @@ $(document).ready(function () {
 
 
         // shopNum 개수에 따라, 총 상품금액이 달라져라
-        let product_total = shopNum * 2000;
+        let product_total = 0;
+        $('.cart_sub em').each(function () {
+            product_total += parseInt($(this).text());
+        });
         $('#product_total').text(product_total);
 
         // 배송비: 5만원 이상이면 배송비 무료, 5만원 미만이면 배송비 3000원
