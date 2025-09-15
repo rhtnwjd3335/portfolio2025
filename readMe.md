@@ -19,13 +19,13 @@
 # 📁 Projects 📁
 
 ## 1️⃣ Project 01 : 피규어 뮤지엄 W 웹사이트 리뉴얼 프로젝트
-> 웹사이트 리뉴얼
+> 반응형 웹사이트 리뉴얼 프로젝트
 
 **📆 제작 기간 📆** : 2025.06.04 ~ 2025.08.01  
 **📋 역할 📋** : 디자인 100%, 퍼블리싱 100%, 기획 참여  
 
 ### ⭐ 프로젝트 설명 ⭐
-불필요한 메뉴와 정보들은 삭제 및 통합하여 웹사이트 메뉴를 구성하고,
+불필요한 메뉴와 정보들은 삭제 및 통합하여 웹사이트 메뉴를 구성하고,  
 개성적인 디자인적 요소를 강화하며 웹사이트 이용자의 편의 기능 구현을 한 리뉴얼 프로젝트입니다.  
 
 - **반응형**으로 모든 디바이스에서 최적화  
@@ -35,7 +35,7 @@
 - 메인페이지 + 네비게이션창 + 예매창 + 서브 페이지(전시, 이벤트, FAQ, 층별안내, 리뷰, 공지사항) 제작
   
 ### 🚀 링크 🚀
-- [브레인스토밍]([링크](https://www.figma.com/design/IibBAV9dUyuYrgIAvHwrQd/%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%AE%A4%EC%A7%80%EC%97%84-W-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0-1&p=f&t=xjBToTl3FfzZQUjO-0))
+- [브레인스토밍](https://www.figma.com/design/IibBAV9dUyuYrgIAvHwrQd/%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%AE%A4%EC%A7%80%EC%97%84-W-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0-1&p=f&t=xjBToTl3FfzZQUjO-0)
 - [와이어프레임]([링크](https://www.figma.com/design/IibBAV9dUyuYrgIAvHwrQd/%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%AE%A4%EC%A7%80%EC%97%84-W-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=1-180&p=f&t=xjBToTl3FfzZQUjO-0))
 - [디자인]([링크](https://www.figma.com/design/IibBAV9dUyuYrgIAvHwrQd/%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%AE%A4%EC%A7%80%EC%97%84-W-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=1-1649&t=xjBToTl3FfzZQUjO-0))
 - [코드 저장소]([링크](https://github.com/rhtnwjd3335/portfolio2025/blob/main/project001/index.html))
