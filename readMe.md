@@ -36,10 +36,10 @@
   
 ### 🚀 링크 🚀
 - [브레인스토밍](https://www.figma.com/design/IibBAV9dUyuYrgIAvHwrQd/%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%AE%A4%EC%A7%80%EC%97%84-W-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0-1&p=f&t=xjBToTl3FfzZQUjO-0)
-- [와이어프레임]([링크](https://www.figma.com/design/IibBAV9dUyuYrgIAvHwrQd/%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%AE%A4%EC%A7%80%EC%97%84-W-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=1-180&p=f&t=xjBToTl3FfzZQUjO-0))
-- [디자인]([링크](https://www.figma.com/design/IibBAV9dUyuYrgIAvHwrQd/%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%AE%A4%EC%A7%80%EC%97%84-W-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=1-1649&t=xjBToTl3FfzZQUjO-0))
-- [코드 저장소]([링크](https://github.com/rhtnwjd3335/portfolio2025/blob/main/project001/index.html))
-- [배포 사이트]([링크](https://rhtnwjd3335.github.io/portfolio2025/project001/))
+- [와이어프레임](https://www.figma.com/design/IibBAV9dUyuYrgIAvHwrQd/%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%AE%A4%EC%A7%80%EC%97%84-W-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=1-180&p=f&t=xjBToTl3FfzZQUjO-0)
+- [디자인](https://www.figma.com/design/IibBAV9dUyuYrgIAvHwrQd/%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%AE%A4%EC%A7%80%EC%97%84-W-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=1-1649&t=xjBToTl3FfzZQUjO-0)
+- [코드 저장소](https://github.com/rhtnwjd3335/portfolio2025/blob/main/project001/index.html)
+- [배포 사이트](https://rhtnwjd3335.github.io/portfolio2025/project001/)
 
 ### 👀 페이지 미리보기 👀
 | 메인 | 서브 |
@@ -60,9 +60,9 @@
 - **Swiper** 슬라이드, **탭메뉴**, **모달창** 구현
 
 ### 🚀 링크 🚀
-- [디자인 시안]([링크](https://www.figma.com/design/H7vIUYA0mpQ5APvfbtf0Vb/%ED%95%98%EB%A6%AC%EB%B3%B4-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=1-500&p=f&t=xjBToTl3FfzZQUjO-0))
-- [코드 저장소]([링크](https://github.com/rhtnwjd3335/portfolio2025/blob/main/project002/index.html))
-- [배포 사이트]([링크](https://rhtnwjd3335.github.io/portfolio2025/project002/))
+- [디자인 시안](https://www.figma.com/design/H7vIUYA0mpQ5APvfbtf0Vb/%ED%95%98%EB%A6%AC%EB%B3%B4-%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=1-500&p=f&t=xjBToTl3FfzZQUjO-0)
+- [코드 저장소](https://github.com/rhtnwjd3335/portfolio2025/blob/main/project002/index.html)
+- [배포 사이트](https://rhtnwjd3335.github.io/portfolio2025/project002/)
 
 ### 👀 페이지 미리보기 👀
 | 메인 페이지 | 상품 상세 페이지 |
