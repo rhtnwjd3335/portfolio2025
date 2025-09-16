@@ -1,0 +1,357 @@
+/* 언어설정 */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+/* font-family: "Rubik Doodle Shadow", system-ui; */
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    position: fixed;
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    color: #fff;
+}
+
+
+/* 타이틀 설정 */
+h1 {
+    width: 100vw;
+    height: calc(50vh - 25px);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+h1 img {
+    width: 900px;
+    height: 420px;
+    margin-left: -50px;
+    display: flex;
+    animation: ani5 4s 1 linear, logo 0.8s 1 linear 4s;
+    cursor: pointer;
+}
+
+
+/* nav 설정 */
+nav {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    z-index: 4;
+}
+
+nav ul {}
+
+nav ul li {
+    background-image: url(img/title_bg_02.png);
+    background-repeat: no-repeat;
+    background-size: 250px 70px;
+
+    width: 250px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-size: 30px;
+
+    cursor: pointer;
+
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+    z-index: 5;
+
+    transition: all 0.8s;
+}
+
+nav ul li:nth-child(1) {
+    margin-left: -500px;
+    top: -10px;
+    animation: ani1 0.8s 1 linear;
+}
+
+nav ul li:nth-child(2) {
+    font-size: 23px;
+    top: 100px;
+    margin-left: -250px;
+    text-align: center;
+    animation: ani5 1.5s 1 linear, ani2 0.8s 1 linear 1s;
+}
+
+nav ul li:nth-child(3) {
+    top: 200px;
+    margin-left: 0;
+    animation: ani5 2.5s 1 linear, ani3 0.8s 1 linear 2s;
+}
+
+nav ul li:nth-child(4) {
+    top: 300px;
+    margin-left: 250px;
+    animation: ani5 3.5s 1 linear, ani4 0.8s 1 linear 3s;
+}
+
+nav ul li:hover {
+    background-image: url(img/title_bg_01.png);
+    color: #45B472;
+}
+
+nav ul li em {
+    display: block;
+    font-style: normal;
+    margin-left: 5px;
+}
+
+@keyframes ani1 {
+    0% {
+        left: 100%;
+        margin-left: 0;
+    }
+
+    100% {
+        left: 50%;
+        margin-left: -500px;
+    }
+}
+
+@keyframes ani2 {
+    0% {
+        left: 100%;
+        margin-left: 0;
+    }
+
+    100% {
+        display: flex;
+        left: 50%;
+        margin-left: -250px;
+    }
+}
+
+@keyframes ani3 {
+    0% {
+        left: 100%;
+        margin-left: 0;
+    }
+
+    100% {
+        display: flex;
+        left: 50%;
+        margin-left: 0;
+    }
+}
+
+@keyframes ani4 {
+    0% {
+        left: 100%;
+        margin-left: 0;
+    }
+
+    100% {
+        display: flex;
+        left: 50%;
+        margin-left: 250px;
+    }
+}
+
+@keyframes ani5 {
+    0% {
+        display: none;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+@keyframes ani6 {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes logo {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    100% {
+        width: 900px;
+        height: 420px;
+    }
+}
+
+nav>div {
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid #fff;
+
+    position: absolute;
+    left: 0;
+
+    transition: all 0.8s;
+}
+
+.box1 {
+    top: 58px;
+    animation: ani6 1s 1 linear;
+}
+
+.box2 {
+    top: 168px;
+    animation: ani5 1s 1 linear, ani6 1s 1 linear 1s;
+}
+
+.box3 {
+    top: 268px;
+    animation: ani5 2s 1 linear, ani6 1s 1 linear 2s;
+}
+
+.box4 {
+    top: 368px;
+    animation: ani5 3s 1 linear, ani6 1s 1 linear 3s;
+}
+
+
+/* wrap 설정 */
+#wrap {
+    width: 100%;
+    height: calc(50vh + 25px);
+    position: relative;
+}
+
+#wrap section {
+    position: absolute;
+    width: 100%;
+    height: calc(50vh + 25px);
+    display: flex;
+    align-items: center;
+    padding: 10px 300px;
+    box-sizing: border-box;
+    z-index: 10;
+
+    /* transition: all 0.8s; */
+    animation: sec 1s 1 linear;
+}
+
+@keyframes sec {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+#wrap .profile {
+    display: none;
+}
+
+#wrap .project01 {
+    display: none;
+}
+
+#wrap .project02 {
+    display: none;
+}
+
+#wrap .project03 {
+    display: none;
+}
+
+
+/* 세부설정 */
+#wrap section .detail {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#wrap section .detail img {}
+
+
+/* 텍스트 설정 */
+#wrap section .detail .txt {
+    margin-left: 50px;
+}
+
+#wrap section .detail .txt h2 {
+    margin-bottom: 20px;
+}
+
+#wrap section .detail .txt h2 img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+#wrap section .detail .txt p {
+    line-height: 28px;
+}
+
+
+/* 버튼 설정 */
+#wrap section .btn {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#wrap section .btn ul {}
+
+#wrap section .btn ul li {
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #45B472;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #45B472;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#wrap section .btn ul li a {
+    display: block;
+    color: #45B472;
+}
+
+#wrap section .btn ul li:hover {
+    background-color: #45B472;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+#wrap section .btn ul li:hover a {
+    color: #fff;
+}
+
+
+/* 컨셉뷰 설정 */
+#wrap section .conceptView {}
+
+#wrap section .conceptView img {}
