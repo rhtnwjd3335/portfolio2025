@@ -43,7 +43,7 @@
 ### 👀 페이지 미리보기 👀
 | 메인 | 서브 |
 |-----|------|
-| ![메인](https://github.com/rhtnwjd3335/portfolio2025/blob/main/mockup1.png) | ![서브](이미지주소) |
+| ![메인](https://github.com/rhtnwjd3335/portfolio2025/blob/main/mockup1.png) | ![서브](https://github.com/rhtnwjd3335/portfolio2025/blob/main/sub_page2.png) |
 
 ---
 
@@ -72,7 +72,7 @@
 ### 👀 페이지 미리보기 👀
 | 메인 페이지 | 상품 상세 페이지 |
 |------------|----------------|
-| ![메인](https://github.com/rhtnwjd3335/portfolio2025/blob/main/mockup2.png) | ![상품](이미지주소) |
+| ![메인](https://github.com/rhtnwjd3335/portfolio2025/blob/main/mockup2.png) | ![상품](https://github.com/rhtnwjd3335/portfolio2025/blob/main/sub_page.png) |
 
 ---
 
