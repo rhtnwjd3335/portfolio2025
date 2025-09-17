@@ -469,6 +469,7 @@ $(document).ready(function () {
 
         $('#wrap').css('display', 'none');
         $('#sub_product_01').css('display', 'block');
+        $(window).scrollTop(0);
 
     });
 
@@ -478,6 +479,7 @@ $(document).ready(function () {
 
         $('#wrap').css('display', 'none');
         $('#sub_product_02').css('display', 'block');
+        $(window).scrollTop(0);
 
     });
 
@@ -487,6 +489,7 @@ $(document).ready(function () {
 
         $('#wrap').css('display', 'none');
         $('#sub_product_03').css('display', 'block');
+        $(window).scrollTop(0);
 
     });
 
@@ -496,6 +499,7 @@ $(document).ready(function () {
 
         $('#wrap').css('display', 'none');
         $('#sub_product_04').css('display', 'block');
+        $(window).scrollTop(0);
 
     });
 
@@ -505,6 +509,7 @@ $(document).ready(function () {
 
         $('#wrap').css('display', 'none');
         $('#sub_product_05').css('display', 'block');
+        $(window).scrollTop(0);
 
     });
 
@@ -514,6 +519,7 @@ $(document).ready(function () {
 
         $('#wrap').css('display', 'none');
         $('#sub_product_06').css('display', 'block');
+        $(window).scrollTop(0);
 
     });
 
@@ -523,6 +529,7 @@ $(document).ready(function () {
 
         $('#wrap').css('display', 'none');
         $('#sub_product_07').css('display', 'block');
+        $(window).scrollTop(0);
 
     });
 
@@ -532,6 +539,7 @@ $(document).ready(function () {
 
         $('#wrap').css('display', 'none');
         $('#sub_product_08').css('display', 'block');
+        $(window).scrollTop(0);
 
     });
 
