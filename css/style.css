@@ -59,7 +59,7 @@ nav {
 nav ul {}
 
 nav ul li {
-    background-image: url(img/title_bg_02.png);
+    background-image: url(../img/title_bg_02.png);
     background-repeat: no-repeat;
     background-size: 250px 70px;
 
@@ -110,7 +110,7 @@ nav ul li:nth-child(4) {
 }
 
 nav ul li:hover {
-    background-image: url(img/title_bg_01.png);
+    background-image: url(../img/title_bg_01.png);
     color: #45B472;
 }
 
