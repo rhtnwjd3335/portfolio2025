@@ -105,7 +105,7 @@ $(document).ready(function () {
 
         // 선택구간보다 클 때
 
-        if (sc >= v_top1 * 4) {
+        if (sc >= v_top1 * 5) {
             $('.video_txt p').addClass('on');
         }
 
