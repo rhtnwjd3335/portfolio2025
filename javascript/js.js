@@ -200,4 +200,14 @@ $(document).ready(function () {
         }
 
     });
+
+    // project02 btn li:nth-child(1) 클릭했을 때, conceptView를 팝업으로 나타내라
+    $('.project02 .btn li:nth-child(1)').click(function () {
+        $('.conceptView').css('display', 'flex');
+        $(window).scrollTop(0);
+    });
+
+    $('.conceptView div').click(function(){
+        $('.conceptView').css('display', 'none');
+    });
 })
