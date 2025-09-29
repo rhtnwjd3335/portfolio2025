@@ -77,6 +77,27 @@
 ---
 
 ## 3️⃣ Project 03 : 프로젝트 제목
+> 데스크톱 전용 웹사이트 리뉴얼 프로젝트
+
+**📆 제작 기간 📆** : 2025.09.22 ~ 2024.09.26 (40H)  
+**📋 역할 📋** : 디자인 100%, 퍼블리싱 100%, 기획 전담
+
+### ⭐ 프로젝트 설명 ⭐
+세련미와 차분함이 컨셉인 HIGHLIGHT 팬페이지로 인물형 웹페이지 제작 프로젝트입니다.  
+
+- **데스크톱 전용**으로 제작  
+- 메인컬러 : 다크 그레이, 딥 그레이, 딥 네이비 블루
+- MAIN + MEMBER(+개인페이지) + ALBUM + GALLERY 페이지
+
+### 🚀 링크 🚀
+- [디자인시안](https://www.figma.com/design/n8hXzuI8piamTGTcqqCQL8/%ED%95%98%EC%9D%B4%EB%9D%BC%EC%9D%B4%ED%8A%B8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B83?node-id=0-1&p=f&t=MPTtVAVaCd6P3ikt-0)
+- [코드저장소](https://github.com/rhtnwjd3335/portfolio2025/blob/main/project003/index.html)
+- [배포사이트](https://rhtnwjd3335.github.io/portfolio2025/project003/)
+
+### 👀 페이지 미리보기 👀
+| 메인 페이지 |
+|------------|
+| ![메인](https://github.com/rhtnwjd3335/portfolio2025/blob/main/mockup3.png) |
 
 ---
 
