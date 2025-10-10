@@ -181,6 +181,11 @@ img {
     margin-bottom: 5px;
 }
 
+.menu_main ul li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .menu_main ul li a {
     font-size: 20px;
 }

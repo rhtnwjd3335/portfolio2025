@@ -5,6 +5,10 @@ $(document).ready(function () {
         $('.menu_sub').slideToggle();
     });
 
+    $('#wrap').click(function(){
+        $('.menu_sub').css('display','none');
+    });
+
     // 네비게이션 클릭 시, 섹션 위치 설정
     $('.nav ul li').click(function () {
         let index = $(this).index();
