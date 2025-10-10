@@ -2,10 +2,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
-/* font-family: "Jua", sans-serif;
-  font-weight: 400;
-  font-style: normal; */
-
 
 /* 전체 설정 */
 * {
@@ -421,8 +417,6 @@ img {
     left: 47%;
 }
 
-.box3-3 ul li:nth-child(2) {}
-
 .box3-3 ul li:nth-child(3) {
     left: 53%;
 }
@@ -607,15 +601,12 @@ img {
     text-align: center;
 }
 
-.box4-3 img {}
-
 .box4-3 img:hover {
     opacity: 0.9;
 }
 
 .box4-4 {
     width: 100%;
-    /* height: calc(100vh - 85px); */
     height: 100vh;
     background-color: rgba(00, 00, 00, 0.5);
     position: absolute;
@@ -703,10 +694,6 @@ img {
     box-sizing: border-box;
 }
 
-.box5 .box5-1 {}
-
-.box5-1 .display {}
-
 .box5-1 .title {
     text-align: center;
 }
@@ -731,8 +718,6 @@ img {
     margin-bottom: 40px;
 }
 
-.box5-2 .display_gallery {}
-
 .box5-2 ul {
     display: flex;
     justify-content: center;
@@ -751,8 +736,6 @@ img {
     display: block;
     justify-content: space-between;
 }
-
-.box5-2 .display_txt {}
 
 .box5-2 img {
     width: 100%;
@@ -782,8 +765,6 @@ img {
     text-align: center;
 }
 
-.box5-3 .display_btn {}
-
 .box5-3 img:hover {
     opacity: 0.9;
 }
@@ -803,10 +784,6 @@ img {
     padding: 0 100px;
     box-sizing: border-box;
 }
-
-.box6 .box6-1 {}
-
-.box6-1 .floor {}
 
 .box6-1 .title {
     text-align: center;
@@ -941,10 +918,6 @@ img {
     text-align: center;
 }
 
-.box7-1 .come {}
-
-.box7-1 .come_title {}
-
 
 .box7-1 img {
     vertical-align: middle;
@@ -1075,10 +1048,6 @@ img {
     box-sizing: border-box;
 }
 
-.box8 .box8-1 {}
-
-.box8-1 .event {}
-
 .box8-1 .title {
     text-align: center;
 }
@@ -1169,8 +1138,6 @@ img {
 }
 
 
-.box8-2 .event_btn2 {}
-
 .box8-2 i {
     font-size: 40px;
     color: #fff;
@@ -1183,7 +1150,6 @@ img {
 }
 
 .box8-2 i:hover {
-    /* opacity: 0.9; */
     transform: scale(1.1);
 }
 
@@ -1205,8 +1171,6 @@ img {
     box-sizing: border-box;
     margin-left: 40px;
 }
-
-.box8-3 img {}
 
 .box8-3 img:hover {
     opacity: 0.9;
@@ -1249,10 +1213,6 @@ img {
     padding: 0 100px;
     box-sizing: border-box;
 }
-
-.box9 .box9-1 {}
-
-.box9-1 .review {}
 
 .box9-1 .title {
     text-align: center;
@@ -1378,10 +1338,6 @@ img {
     align-items: center;
 }
 
-.box10-1 .notice {}
-
-.box10-1 .notice>.title {}
-
 .box10 .box10-2 {
     width: 50%;
 }
@@ -1392,8 +1348,6 @@ img {
     font-size: 20px;
 }
 
-.box10-2 li {}
-
 .box10-2 li:hover {
     font-weight: bold;
 }
@@ -1401,8 +1355,6 @@ img {
 .box10 .box10-3 {
     width: 10%;
 }
-
-.box10-3 .notice_btn {}
 
 .box10-3 i {
     font-size: 35px;
@@ -1454,8 +1406,6 @@ img {
     font-size: 20px;
 }
 
-.box11-2 li {}
-
 .box11-2 li:hover {
     font-weight: bold;
 }
@@ -1463,8 +1413,6 @@ img {
 .box11 .box11-3 {
     width: 10%;
 }
-
-.box11-3 .faq_btn {}
 
 .box11-3 i {
     font-size: 35px;
@@ -1493,10 +1441,6 @@ img {
     box-sizing: border-box;
 }
 
-.box12-1 .watch {}
-
-.box12-1 .watch_title {}
-
 .box12-1 img {
     vertical-align: middle;
     margin-right: 15px;
@@ -1522,8 +1466,6 @@ img {
 .box12-2 .watch_main {
     width: auto;
 }
-
-.box12-2 ul {}
 
 .box12-2 .watch_main>ul>li {
     display: flex;
@@ -1655,7 +1597,6 @@ img {
     height: 100%;
     padding-top: 180px;
     padding-bottom: 150px;
-    /* background-color: rgba(254, 228, 64, 0.3); */
     max-width: 2000px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -1839,8 +1780,6 @@ img {
     align-items: center;
 }
 
-.event_003 ul li {}
-
 .event_003 ul li:first-child a {
     padding: 5px 12px;
     margin-right: 10px;
@@ -1856,8 +1795,6 @@ img {
     color: #3D3D98;
     font-size: 30px;
 }
-
-.event_003 ul li a i {}
 
 .event_003 ul li:nth-child(2) a {
     padding: 5px 12px;
@@ -1940,7 +1877,6 @@ img {
     height: 100%;
     padding-top: 180px;
     padding-bottom: 150px;
-    /* background-color: rgba(254, 228, 64, 0.3); */
     max-width: 2000px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -2048,8 +1984,6 @@ img {
     align-items: center;
 }
 
-.notice_003 ul li {}
-
 .notice_003 ul li:first-child a {
     padding: 5px 12px;
     margin-right: 10px;
@@ -2065,8 +1999,6 @@ img {
     color: #3D3D98;
     font-size: 30px;
 }
-
-.notice_003 ul li a i {}
 
 .notice_003 ul li:nth-child(2) a {
     padding: 5px 12px;
@@ -2138,7 +2070,6 @@ img {
     height: 100%;
     padding-top: 180px;
     padding-bottom: 150px;
-    /* background-color: rgba(254, 228, 64, 0.3); */
     max-width: 2000px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -2356,8 +2287,6 @@ img {
     align-items: center;
 }
 
-.review_003 ul li {}
-
 .review_003 ul li:first-child a {
     padding: 5px 12px;
     margin-right: 10px;
@@ -2373,8 +2302,6 @@ img {
     color: #3D3D98;
     font-size: 30px;
 }
-
-.review_003 ul li a i {}
 
 .review_003 ul li:nth-child(2) a {
     padding: 5px 12px;
@@ -2457,7 +2384,6 @@ img {
     height: 100%;
     padding-top: 180px;
     padding-bottom: 150px;
-    /* background-color: rgba(254, 228, 64, 0.3); */
     max-width: 2000px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -2641,8 +2567,6 @@ img {
     align-items: center;
 }
 
-.display_003 ul li {}
-
 .display_003 ul li:first-child a {
     padding: 5px 12px;
     margin-right: 10px;
@@ -2658,8 +2582,6 @@ img {
     color: #3D3D98;
     font-size: 30px;
 }
-
-.display_003 ul li a i {}
 
 .display_003 ul li:nth-child(2) a {
     padding: 5px 12px;
@@ -2777,7 +2699,6 @@ img {
     height: 100%;
     padding-top: 180px;
     padding-bottom: 150px;
-    /* background-color: rgba(254, 228, 64, 0.3); */
     max-width: 2000px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -2961,8 +2882,6 @@ img {
     align-items: center;
 }
 
-.faq_003 ul li {}
-
 .faq_003 ul li:first-child a {
     padding: 5px 12px;
     margin-right: 10px;
@@ -2978,8 +2897,6 @@ img {
     color: #3D3D98;
     font-size: 30px;
 }
-
-.faq_003 ul li a i {}
 
 .faq_003 ul li:nth-child(2) a {
     padding: 5px 12px;
@@ -3116,8 +3033,6 @@ img {
     padding-right: 10px;
     margin-bottom: 20px;
 }
-
-.floor_sub_btn a {}
 
 .floor_sub_btn a i {
     font-size: 20px;
@@ -4055,8 +3970,6 @@ img {
         background-color: rgba(254, 228, 64, 0.3);
     }
 
-    .box12 .box12-1 {}
-
     .box12-2 .watch_main>ul>li {
         padding: 20px 30px;
     }
@@ -4605,8 +4518,6 @@ img {
     .box12 {
         background-color: rgba(254, 228, 64, 0.3);
     }
-
-    .box12 .box12-1 {}
 
     .box12-2 .watch_main>ul>li {
         padding: 20px 20px;

@@ -5,12 +5,6 @@ $(document).ready(function () {
         $('.menu_sub').slideToggle();
     });
 
-    // $('.logo a>img').click(function (e) {
-    //     e.preventDefault();
-
-    //     $('.menu_sub').slideToggle();
-    // });
-
     // 네비게이션 클릭 시, 섹션 위치 설정
     $('.nav ul li').click(function () {
         let index = $(this).index();

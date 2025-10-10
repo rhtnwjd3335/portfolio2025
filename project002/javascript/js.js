@@ -207,11 +207,10 @@ $(document).ready(function () {
     let shopNum = 0;
 
     $(document).on('click', '.cart_sub i', function () {
-        console.log('삭제 버튼 클릭됨!'); // 이 메시지가 나오는지 확인
-
         $(this).closest('.cart_sub').remove();
 
         shopNum--;
+        
         $('.util>ul>li:nth-child(2) span').text(shopNum);
 
         if ($('.cart_sub').length == 0) {
@@ -225,16 +224,17 @@ $(document).ready(function () {
 
         else {
             // shopNum 개수에 따라, 총 상품금액이 달라져라
-            // let product_total = shopNum * 2000;
-            // $('#product_total').text(product_total);
             let product_total = 0;
+
             $('.cart_sub em').each(function () {
                 product_total += parseInt($(this).text());
             });
+
             $('#product_total').text(product_total);
 
             // 배송비: 5만원 이상이면 배송비 무료, 5만원 미만이면 배송비 3000원
             let delivery_fee;
+
             if (product_total >= 50000) {
                 delivery_fee = 0;
             }
@@ -276,6 +276,14 @@ $(document).ready(function () {
         $('.header').css('display', 'none');
         $('footer').css('display', 'none');
         $('#login').css('display', 'flex');
+        $('#sub_product_01').css('display', 'none');
+        $('#sub_product_02').css('display', 'none');
+        $('#sub_product_03').css('display', 'none');
+        $('#sub_product_04').css('display', 'none');
+        $('#sub_product_05').css('display', 'none');
+        $('#sub_product_06').css('display', 'none');
+        $('#sub_product_07').css('display', 'none');
+        $('#sub_product_08').css('display', 'none');
         $('.shop').removeClass('on');
 
         shopIcon++;
@@ -306,22 +314,29 @@ $(document).ready(function () {
 
             // 전체 총액 재계산
             let product_total = 0;
+
             $('.cart_sub em').each(function () {
                 product_total += parseInt($(this).text());
             });
+
             $('#product_total').text(product_total);
 
             // 배송비: 5만원 이상이면 배송비 무료, 5만원 미만이면 배송비 3000원
             let delivery_fee;
+
             if (product_total >= 50000) {
                 delivery_fee = 0;
-            } else {
+            }
+            
+            else {
                 delivery_fee = 3000;
             }
+            
             $('#delivery_fee').text(delivery_fee);
 
             // 총 상품금액 + 배송비의 값을 결제금액에 넣어라
             let order_total = product_total + delivery_fee;
+
             $('#order_total').text(order_total);
         }
     });
@@ -337,24 +352,24 @@ $(document).ready(function () {
         $(this).closest('.cart_sub').find('em').text(itemPrice);
 
         // 전체 총액 재계산
-            let product_total = 0;
-            $('.cart_sub em').each(function () {
-                product_total += parseInt($(this).text());
-            });
-            $('#product_total').text(product_total);
+        let product_total = 0;
+        $('.cart_sub em').each(function () {
+            product_total += parseInt($(this).text());
+        });
+        $('#product_total').text(product_total);
 
-            // 배송비: 5만원 이상이면 배송비 무료, 5만원 미만이면 배송비 3000원
-            let delivery_fee;
-            if (product_total >= 50000) {
-                delivery_fee = 0;
-            } else {
-                delivery_fee = 3000;
-            }
-            $('#delivery_fee').text(delivery_fee);
+        // 배송비: 5만원 이상이면 배송비 무료, 5만원 미만이면 배송비 3000원
+        let delivery_fee;
+        if (product_total >= 50000) {
+            delivery_fee = 0;
+        } else {
+            delivery_fee = 3000;
+        }
+        $('#delivery_fee').text(delivery_fee);
 
-            // 총 상품금액 + 배송비의 값을 결제금액에 넣어라
-            let order_total = product_total + delivery_fee;
-            $('#order_total').text(order_total);
+        // 총 상품금액 + 배송비의 값을 결제금액에 넣어라
+        let order_total = product_total + delivery_fee;
+        $('#order_total').text(order_total);
     });
 
 
@@ -588,6 +603,14 @@ $(document).ready(function () {
         $('.header').css('display', 'none');
         $('footer').css('display', 'none');
         $('#login').css('display', 'flex');
+        $('#sub_product_01').css('display', 'none');
+        $('#sub_product_02').css('display', 'none');
+        $('#sub_product_03').css('display', 'none');
+        $('#sub_product_04').css('display', 'none');
+        $('#sub_product_05').css('display', 'none');
+        $('#sub_product_06').css('display', 'none');
+        $('#sub_product_07').css('display', 'none');
+        $('#sub_product_08').css('display', 'none');
 
     });
 
@@ -601,4 +624,43 @@ $(document).ready(function () {
         $('footer').css('display', 'flex');
 
     });
+
+
+    const content = [
+        "<em>함께</em>해요 모두 다,",
+        "<em>행복</em>해요 하리보!"
+    ];
+
+    let lineNum = 0;
+    let charNum = 0;
+
+    function typing() {
+        let lineId = "#line" + (lineNum + 1);
+        let txt = content[lineNum];
+
+        if (txt.charAt(charNum) === "<") {
+            let closeIdx = txt.indexOf(">", charNum);
+            $(lineId).html(txt.substring(0, closeIdx + 1));
+            charNum = closeIdx + 1;
+        }
+
+        else {
+            $(lineId).html(txt.substring(0, charNum + 1));
+            charNum++;
+        }
+
+        if (charNum >= txt.length) {
+            clearInterval(time);
+            lineNum++;
+            charNum = 0;
+
+            if (lineNum < content.length) {
+                setTimeout(() => {
+                    time = setInterval(typing, 200);
+                }, 200);
+            }
+        }
+    };
+
+    let time = setInterval(typing, 200);
 })

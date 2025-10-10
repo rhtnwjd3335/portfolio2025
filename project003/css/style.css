@@ -57,7 +57,6 @@ nav ul {
     align-items: center;
 }
 
-nav ul li {}
 
 nav ul li:nth-child(1) {
     margin-left: 100px;
@@ -221,9 +220,6 @@ nav ul li.on img:nth-child(4) {
     background-image: url(../img/main_bg_01.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-
-    /*  */
-    /* display: none; */
 }
 
 .main img {
@@ -263,7 +259,6 @@ nav ul li.on img:nth-child(4) {
     background-repeat: no-repeat;
     background-size: cover;
 
-    /*  */
     display: none;
 }
 
@@ -277,6 +272,7 @@ nav ul li.on img:nth-child(4) {
     background-size: cover;
     background-position: -178px -550px;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 5px #d9d9d9;
 
@@ -296,7 +292,6 @@ nav ul li.on img:nth-child(4) {
     top: 50%;
     opacity: 0;
     transition: all 0.8s;
-    /* display: none; */
 }
 
 .member div:hover {
@@ -313,8 +308,6 @@ nav ul li.on img:nth-child(4) {
     top: 50%;
     display: block;
 }
-
-.member div p a {}
 
 .member div span {
     font-family: "Allura", cursive;
@@ -342,8 +335,6 @@ nav ul li.on img:nth-child(4) {
     margin-top: -10px;
 }
 
-.member .mem_yoon p a {}
-
 .member .mem_yoon span {
     margin-left: 50px;
     margin-top: 10px;
@@ -361,8 +352,6 @@ nav ul li.on img:nth-child(4) {
     margin-left: -90px;
     margin-top: -20px;
 }
-
-.member .mem_yang p a {}
 
 .member .mem_yang span {
     margin-left: 20px;
@@ -382,8 +371,6 @@ nav ul li.on img:nth-child(4) {
     margin-top: -5px;
 }
 
-.member .mem_lee p a {}
-
 .member .mem_lee span {
     margin-left: 10px;
     margin-top: 10px;
@@ -400,8 +387,6 @@ nav ul li.on img:nth-child(4) {
     margin-left: -35px;
     margin-top: 10px;
 }
-
-.member .mem_son p a {}
 
 .member .mem_son span {
     margin-left: 5px;
@@ -423,8 +408,6 @@ nav ul li.on img:nth-child(4) {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* overflow: hidden; */
-    /* user-select: none; */
     pointer-events: none;
     background-color: #111;
     opacity: 1;
@@ -917,8 +900,6 @@ nav ul li.on img:nth-child(4) {
     margin-top: 20px;
 }
 
-.album .play .song h2 img {}
-
 .album .play .song>p {
     font-family: "Titan One", sans-serif;
     font-size: 80px;
@@ -981,10 +962,6 @@ nav ul li.on img:nth-child(4) {
 .album .play .song .playlist>div img:nth-child(2) {
     z-index: 30;
     top: 1.5px;
-}
-
-.album .play .song .playlist>div:nth-child(1) img:nth-child(2) {
-    /* left: 50px; */
 }
 
 .album .play .song .playlist>div.on img:nth-child(2) {
@@ -1088,9 +1065,6 @@ nav ul li.on img:nth-child(4) {
 .gallery .gallery_txt p:nth-child(1) {
     color: #333;
     font-size: 30px;
-    /* font-size: 70px; */
-    /* margin-left: -650px; */
-    /* margin-top: -100px; */
     margin-left: -265px;
     top: 120px;
     text-shadow: 4px 4px 4px #aaa;
@@ -1102,9 +1076,6 @@ nav ul li.on img:nth-child(4) {
 .gallery .gallery_txt p:nth-child(2) {
     color: #ddd;
     font-size: 30px;
-    /* font-size: 70px; */
-    /* margin-left: 20px; */
-    /* margin-top: -100px; */
     margin-left: 30px;
     top: 120px;
     text-shadow: 4px 4px 4px #aaa;
@@ -1116,8 +1087,6 @@ nav ul li.on img:nth-child(4) {
 .gallery .gallery_txt p:nth-child(3) {
     color: #555;
     font-size: 14px;
-    /* font-size: 24px; */
-    /* margin-left: -370px; */
     margin-left: -210px;
     top: 170px;
     animation: gal4 2s linear 1, gal3_1 1s linear 1 2s, gal3_2 1s linear 1 3s, gal4 1s linear 1 4s, gal6 0.5s linear 1 5s;
