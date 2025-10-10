@@ -1,0 +1,425 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Monofett&display=swap');
+/* font-family: "Modak", system-ui; */
+/* font-family: "Monofett", monospace; */
+
+
+/* 전체 설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    font-style: normal;
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #269F57;
+    color: #fff;
+}
+
+h2 {
+    font-family: "Monofett", monospace;
+    font-size: 40px;
+}
+
+/* 프로필 설정 */
+.profile {
+    width: 80%;
+    height: 80vh;
+    position: fixed;
+    left: 10%;
+    top: 15vh;
+    border: 2px solid #fff;
+}
+
+
+.profile .name {
+    width: 390px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.profile .name img {
+    width: 350px;
+    position: absolute;
+    left: 40px;
+    top: -69px;
+}
+
+.profile .name p {
+    font-family: "Modak", system-ui;
+    color: #269F57;
+    position: absolute;
+}
+
+.profile .name p:nth-child(2) {
+    font-size: 40px;
+    left: 95px;
+    top: -63px;
+    letter-spacing: 2px;
+}
+
+.profile .name p:nth-child(3) {
+    left: 100%;
+    top: -35px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile .pro_me {}
+
+.profile .pro_me .pro1 {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+    left: 100px;
+    top: 40px;
+}
+
+.profile .pro_me .pro1 img {
+    width: 250px;
+    height: 310px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -125px;
+    margin-top: -180px;
+}
+
+.profile .pro_me .pro1 p {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    color: #269F57;
+    font-family: "Modak", system-ui;
+    font-size: 30px;
+}
+
+
+.profile .pro_me>div h2 img {
+    margin-right: 10px;
+}
+
+
+.profile .pro_me .pro2 {
+    position: relative;
+    left: 100px;
+    top: 60px;
+}
+
+.profile .pro_me .pro2 h2 {}
+
+.profile .pro_me .pro2 h2 img {}
+
+.profile .pro_me .pro2 p {
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+.profile .pro_me .pro3 {
+    position: relative;
+    left: 100px;
+    top: 90px;
+}
+
+.profile .pro_me .pro3 h2 {}
+
+.profile .pro_me .pro3 h2 img {}
+
+.profile .pro_me .pro3 ul {
+    width: 350px;
+    height: 100px;
+    position: relative;
+}
+
+.profile .pro_me .pro3 ul li {
+    width: 90px;
+    height: 35px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.profile .pro_me .pro3 ul li:nth-child(1) {
+    left: 15px;
+    top: 20px;
+}
+
+.profile .pro_me .pro3 ul li:nth-child(2) {
+    left: 125px;
+    top: 20px;
+}
+
+.profile .pro_me .pro3 ul li:nth-child(3) {
+    left: 235px;
+    top: 20px;
+}
+
+.profile .pro_me .pro3 ul li:nth-child(4) {
+    left: 15px;
+    top: 75px;
+}
+
+.profile .pro_me .pro3 ul li:nth-child(5) {
+    left: 125px;
+    top: 75px;
+}
+
+.profile .pro_me .pro3 ul li:nth-child(6) {
+    left: 235px;
+    top: 75px;
+}
+
+
+.profile .pro_me .pro4 {
+    position: relative;
+    left: 40%;
+    top: -580px;
+}
+
+.profile .pro_me .pro4 ul {
+    margin-left: 30px;
+}
+
+.profile .pro_me .pro4 ul li {
+    display: flex;
+}
+
+.profile .pro_me .pro4 ul li:nth-child(1) {
+    margin-top: 10px;
+}
+
+.profile .pro_me .pro4 ul li p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.profile .pro_me .pro4 ul li p:nth-child(1) {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.profile .pro_me .pro4 ul li p:nth-child(2) {}
+
+.profile .pro_me .pro4 ul li p em {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.profile .pro_me .pro5 {
+    position: relative;
+    left: 40%;
+    top: -550px;
+}
+
+.profile .pro_me .pro5>ul {
+    width: 850px;
+    height: 200px;
+    position: relative;
+    margin-left: 25px;
+}
+
+.profile .pro_me .pro5>ul>li {
+    width: 250px;
+    height: 80px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(1) {}
+
+.profile .pro_me .pro5>ul>li:nth-child(2) {
+    left: 300px;
+    top: -90px;
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(3) {
+    top: -100px;
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(4) {
+    left: 300px;
+    top: -190px;
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(5) {
+    left: 600px;
+    top: -280px;
+}
+
+.profile .pro_me .pro5>ul>li>ul {}
+
+.profile .pro_me .pro5>ul>li>ul>li {
+    position: absolute;
+}
+
+.profile .pro_me .pro5>ul>li>ul>li:nth-child(1) {
+    top: 10px;
+}
+
+.profile .pro_me .pro5>ul>li>ul>li:nth-child(2) {
+    top: 50%;
+    left: 100%;
+    margin-left: -38px;
+    margin-top: -5px;
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(2)>ul>li:nth-child(2) {
+    margin-left: -68px;
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(5)>ul>li:nth-child(2) {
+    margin-left: -68px;
+}
+
+.profile .pro_me .pro5>ul>li>ul>li:nth-child(3) {
+    width: 200px;
+    height: 25px;
+    background-color: #fff;
+    left: 40px;
+    top: 10px;
+    border-radius: 20px;
+}
+
+.profile .pro_me .pro5>ul>li>ul>li:nth-child(4) {
+    width: 180px;
+    height: 21px;
+    background-color: #269F57;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    left: 42px;
+    top: 12px;
+    background-image: repeating-linear-gradient(-45deg, #269F57, #269F57 2px, #fff 2px, #fff 3px);
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(2)>ul>li:nth-child(4) {
+    width: 150px;
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(5)>ul>li:nth-child(4) {
+    width: 150px;
+}
+
+.profile .pro_me .pro5>ul>li>ul>li:nth-child(5) {
+    left: 100%;
+    margin-left: -45px;
+    top: 50%;
+    margin-top: 12px;
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(2)>ul>li:nth-child(5) {
+    margin-left: -75px;
+}
+
+.profile .pro_me .pro5>ul>li:nth-child(5)>ul>li:nth-child(5) {
+    margin-left: -75px;
+}
+
+
+.profile .pro_me .pro6 {
+    position: relative;
+    left: 40%;
+    top: -560px;
+}
+
+.profile .pro_me .pro6 h2>p {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    position: absolute;
+    left: 19%;
+    top: 24px;
+}
+
+.profile .pro_me .pro6 ul {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    display: flex;
+}
+
+.profile .pro_me .pro6>ul>li {
+    width: 140px;
+    height: 160px;
+    border-right: 2px dotted #fff;
+}
+
+.profile .pro_me .pro6>ul>li:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile .pro_me .pro6>ul>li>p {}
+
+.percent {
+    position: absolute;
+    left: 135px;
+    top: 170px;
+}
+
+.percent>ul {
+    width: 740px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.percent>ul>li {}
+
+.line {
+    height: 112px;
+}
+
+.line>ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-top: 2px;
+}
+
+.line>ul>li {
+    width: 650px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.line>ul>li:nth-child(2) {
+    width: 710px;
+}
+
+.line>ul>li:nth-child(4) {
+    width: 570px;
+}
