@@ -30,7 +30,7 @@ $(document).ready(function () {
 
         if (i == 6) i = 1;
 
-        $('.main').css({ 'background-image': `url(../img/main_bg_0${i}.jpg)`, 'transition': 'all 1s' });
+        $('.main').css({ 'background-image': `url(img/main_bg_0${i}.jpg)`, 'transition': 'all 1s' });
     }, 3000);
 
     // 멤버 설정
