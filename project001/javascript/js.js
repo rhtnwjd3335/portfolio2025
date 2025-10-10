@@ -196,22 +196,4 @@ $(document).ready(function () {
         $('.event_img ul li').removeClass('on');
         $('.event_img ul li').eq(event).addClass('on');
     });
-
-
-    // 상설전시 상세페이지 이동
-    for (let dis = 0; dis < 7; dis++) {
-        $(`.display_gallery li:nth-child(${dis})`).click(function (e) {
-            e.preventDefault();
-
-            // display_detail.html 페이지로 이동
-            window.location.href = `display_detail${dis}.html`;
-        });
-
-        $(`.display_main li:nth-child(${dis})`).click(function (e) {
-            e.preventDefault();
-
-            // display_detail.html 페이지로 이동
-            window.location.href = `display_detail${dis}.html`;
-        });
-    };
 })
