@@ -387,6 +387,7 @@ nav>div {
     body {
         padding-top: 50px;
         box-sizing: border-box;
+        overflow-y: scroll;
     }
 
     nav {
