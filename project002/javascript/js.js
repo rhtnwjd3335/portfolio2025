@@ -45,6 +45,40 @@ $(document).ready(function () {
             $('.brandStory li').removeClass('on');
             $('.product').css('margin-top', '200px');
         }
+
+        if (window.innerWidth <= 767) {
+            if (sc >= b_top1 - 100) {
+                $('.brandStory li').eq(0).addClass('on');
+                $('.product').css('margin-top', '800px');
+            }
+
+            if (sc >= b_top1 + 200) {
+                $('.brandStory li').eq(1).addClass('on');
+            }
+
+            if (sc >= b_top1 * 2 - 100) {
+                $('.brandStory li').eq(2).addClass('on');
+            }
+
+            if (sc >= b_top1 * 2 + 200) {
+                $('.brandStory li').eq(3).addClass('on');
+            }
+
+            if (sc >= b_top1 * 3 + 200) {
+                $('.brandStory li').eq(4).addClass('on');
+            }
+
+            if (sc >= b_top1 * 3 + 400) {
+                $('.brandStory li').eq(5).addClass('on');
+                $('.product').css('margin-top', '200px');
+            }
+
+            // 선택구간 외에 사라지게 만들기
+            if (sc < b_top1 - 300) {
+                $('.brandStory li').removeClass('on');
+                $('.product').css('margin-top', '200px');
+            }
+        }
     });
 
 
@@ -210,7 +244,7 @@ $(document).ready(function () {
         $(this).closest('.cart_sub').remove();
 
         shopNum--;
-        
+
         $('.util>ul>li:nth-child(2) span').text(shopNum);
 
         if ($('.cart_sub').length == 0) {
@@ -327,11 +361,11 @@ $(document).ready(function () {
             if (product_total >= 50000) {
                 delivery_fee = 0;
             }
-            
+
             else {
                 delivery_fee = 3000;
             }
-            
+
             $('#delivery_fee').text(delivery_fee);
 
             // 총 상품금액 + 배송비의 값을 결제금액에 넣어라
