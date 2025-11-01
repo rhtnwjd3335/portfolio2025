@@ -3556,7 +3556,7 @@ footer img {
     }
 
     .brand .brand_txt p {
-        font-size: 14px;
+        font-size: 10px;
         margin-top: 20px;
         padding: 0 10px;
     }
@@ -3613,7 +3613,7 @@ footer img {
 
     .brand .brandStory>ul>li:nth-child(odd) img:nth-child(2) {
         left: 0;
-        top: 250px;
+        top: 280px;
     }
 
     .brand .brandStory>ul>li:nth-child(odd) img:nth-child(3) {
@@ -3633,13 +3633,13 @@ footer img {
     .brand .brandStory>ul>li:nth-child(odd) p.txt {
         left: 80px;
         top: 350px;
-        width: 340px;
+        width: 60%;
         text-align: center;
     }
 
     .brand .brandStory>ul>li:nth-child(odd) p.year {
         left: 20px;
-        top: 345px;
+        top: 375px;
         font-size: 15px;
     }
 
@@ -3650,7 +3650,7 @@ footer img {
 
     .brand .brandStory>ul>li:nth-child(1) img:nth-child(2) {
         left: 0;
-        top: 250px;
+        top: 280px;
     }
 
     .brand .brandStory>ul>li:nth-child(1) img:nth-child(3) {
@@ -3671,13 +3671,13 @@ footer img {
     .brand .brandStory>ul>li:nth-child(1) p.txt {
         left: 80px;
         top: 350px;
-        width: 340px;
+        width: 60%;
         text-align: center;
     }
 
     .brand .brandStory>ul>li:nth-child(1) p.year {
         left: 20px;
-        top: 345px;
+        top: 375px;
         font-size: 15px;
     }
 
@@ -3689,7 +3689,7 @@ footer img {
 
     .brand .brandStory>ul>li:nth-child(even) img:nth-child(2) {
         right: 0;
-        top: 250px;
+        top: 280px;
     }
 
     .brand .brandStory>ul>li:nth-child(even) img:nth-child(3) {
@@ -3702,20 +3702,20 @@ footer img {
         left: 60px;
         top: 350px;
         width: 100%;
-        transform: translateX(-10%);
+        transform: translateX(-15%);
         text-align: center;
     }
 
     .brand .brandStory>ul>li:nth-child(even) p.txt {
-        left: 80px;
+        left: 70px;
         top: 350px;
-        width: 340px;
+        width: 60%;
         text-align: center;
     }
 
     .brand .brandStory>ul>li:nth-child(even) p.year {
         right: 20px;
-        top: 345px;
+        top: 375px;
         font-size: 15px;
     }
 
@@ -4415,14 +4415,19 @@ footer img {
     }
 
     .promotion .promotion_btn>ul {
-        width: 90%;
-        max-width: 500px;
+        width: 100%;
         height: 500px;
     }
 
     .promotion .promotion_btn>ul>li {
-        width: 50%;
+        width: 15%;
         height: 500px;
+        z-index: 9999;
+    }
+
+    .promotion .promotion_btn>ul>li:nth-child(2) {
+        left: 100%;
+        margin-left: -50px;
     }
 
     .promotion .promotion_btn>ul>li>p {
@@ -4562,21 +4567,21 @@ footer img {
         font-size: 25px;
     }
 
-    .review .review_btn > p:nth-child(1) {
+    .review .review_btn>p:nth-child(1) {
         left: -25px;
         top: -180px;
         padding-right: 6px;
         padding-bottom: 4px;
     }
 
-    .review .review_btn > p:nth-child(2) {
+    .review .review_btn>p:nth-child(2) {
         left: calc(100% - 25px);
         top: -230px;
         padding-left: 6px;
         padding-bottom: 4px;
     }
 
-    
+
 
     /* 푸터 설정 */
     footer {
