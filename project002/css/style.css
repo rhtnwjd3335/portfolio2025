@@ -3372,7 +3372,7 @@ footer img {
 
     .header .logo {
         width: 30%;
-        background-size: 120px;
+        background-size: 100px;
     }
 
     .header .logo a {
@@ -3443,7 +3443,7 @@ footer img {
     /* 슬라이더 설정 */
     .slider {
         max-height: 100vh;
-        min-height: 600px;
+        min-height: 500px;
     }
 
     .slider .slogan {
