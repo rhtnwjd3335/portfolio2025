@@ -4118,7 +4118,14 @@ img {
 
     /* 네비게이션 설정 */
     .box2 li {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .box2 a {
+        display: block;
+        padding: 10px 5px;
+        color: #fff;
+        margin-left: 20px;
     }
 
     /* 소개 설정 */
@@ -4179,28 +4186,53 @@ img {
         right: 19px;
     }
 
+    .box3-3 ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -40px;
+        z-index: 20;
+    }
+
     .box3-3 ul li img {
         width: 20px;
     }
 
     .box3-3 ul li:nth-child(1) {
-        left: 45%;
+        left: 50%;
+        margin-left: -50px;
     }
 
     .box3-3 ul li:nth-child(3) {
-        left: 55%;
+        left: 50%;
+        margin-left: 50px;
     }
 
     /* 소개 종료 */
 
 
     /* 예매 설정 */
+
+    .ui-datepicker table {
+        width: 50%;
+        margin-top: 20px;
+        color: #333;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        margin-left: 5%;
+    }
+
     .box4 .box4-2 {
         margin-bottom: 20px;
     }
 
     .box4-2 .reservation_calender .reservation_date {
         width: 90%;
+        background-color: #393939;
     }
 
     .reservation_time ul {
@@ -4274,6 +4306,7 @@ img {
     /* 층별안내 설정 */
     .box6 {
         width: 100%;
+        height: 530px;
         background-color: rgba(254, 228, 64, 0.3);
     }
 
@@ -4327,6 +4360,7 @@ img {
 
     .box6-4 .floor_btn {
         margin-left: 30px;
+        margin-top: 230px;
     }
 
     .box6-4 img {
