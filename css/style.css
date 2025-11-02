@@ -43,7 +43,7 @@ h1 img {
     height: 420px;
     margin-left: -50px;
     display: flex;
-    /* animation: ani5 4s 1 linear, logo 0.8s 1 linear 4s; */
+    animation: ani5 4s 1 linear, logo 0.8s 1 linear 4s;
     cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ nav ul li {
 nav ul li:nth-child(1) {
     margin-left: -500px;
     top: -10px;
-    /* animation: ani1 0.8s 1 linear; */
+    animation: ani1 0.8s 1 linear;
 }
 
 nav ul li:nth-child(2) {
@@ -92,19 +92,19 @@ nav ul li:nth-child(2) {
     top: 100px;
     margin-left: -250px;
     text-align: center;
-    /* animation: ani5 1.5s 1 linear, ani2 0.8s 1 linear 1s; */
+    animation: ani5 1.5s 1 linear, ani2 0.8s 1 linear 1s;
 }
 
 nav ul li:nth-child(3) {
     top: 200px;
     margin-left: 0;
-    /* animation: ani5 2.5s 1 linear, ani3 0.8s 1 linear 2s; */
+    animation: ani5 2.5s 1 linear, ani3 0.8s 1 linear 2s;
 }
 
 nav ul li:nth-child(4) {
     top: 300px;
     margin-left: 250px;
-    /* animation: ani5 3.5s 1 linear, ani4 0.8s 1 linear 3s; */
+    animation: ani5 3.5s 1 linear, ani4 0.8s 1 linear 3s;
 }
 
 nav ul li:hover {
@@ -214,22 +214,22 @@ nav>div {
 
 .box1 {
     top: 58px;
-    /* animation: ani6 1s 1 linear; */
+    animation: ani6 1s 1 linear;
 }
 
 .box2 {
     top: 168px;
-    /* animation: ani5 1s 1 linear, ani6 1s 1 linear 1s; */
+    animation: ani5 1s 1 linear, ani6 1s 1 linear 1s;
 }
 
 .box3 {
     top: 268px;
-    /* animation: ani5 2s 1 linear, ani6 1s 1 linear 2s; */
+    animation: ani5 2s 1 linear, ani6 1s 1 linear 2s;
 }
 
 .box4 {
     top: 368px;
-    /* animation: ani5 3s 1 linear, ani6 1s 1 linear 3s; */
+    animation: ani5 3s 1 linear, ani6 1s 1 linear 3s;
 }
 
 
@@ -250,7 +250,7 @@ nav>div {
     box-sizing: border-box;
     z-index: 10;
 
-    /* transition: all 0.8s; */
+    transition: all 0.8s;
     animation: sec 1s 1 linear;
 }
 
@@ -294,8 +294,6 @@ nav>div {
     align-items: center;
 }
 
-#wrap section .detail img {}
-
 
 /* 텍스트 설정 */
 #wrap section .detail .txt {
@@ -323,8 +321,6 @@ nav>div {
     justify-content: flex-end;
     align-items: center;
 }
-
-#wrap section .btn ul {}
 
 #wrap section .btn ul li {
     width: 150px;
