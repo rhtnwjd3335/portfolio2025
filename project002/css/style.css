@@ -2443,7 +2443,6 @@ body {
     font-size: 14px;
     line-height: 25px;
     border-top: none;
-    /* border-bottom: none; */
     padding-top: 20px;
     padding-bottom: 40px;
     text-align: center;
@@ -3401,7 +3400,7 @@ footer img {
     .header .shop {
         width: 90%;
         max-width: 350px;
-        height: 500px;
+        height: 580px;
         margin-right: 5%;
     }
 
@@ -3410,7 +3409,7 @@ footer img {
     }
 
     .shop .cart_main {
-        height: 200px;
+        height: 250px;
     }
 
     .shop .cart_product {
@@ -4516,16 +4515,22 @@ footer img {
     .video .video_txt p:nth-child(1) {
         left: -50px;
         top: 170px;
+
+        animation: p1_2 1s linear infinite;
     }
 
     .video .video_txt p:nth-child(2) {
         left: 8px;
         bottom: 120px;
+
+        animation: p2_2 0.1s infinite;
     }
 
     .video .video_txt p:nth-child(3) {
         left: 20px;
         top: 110px;
+
+        animation: p3_2 0.1s infinite;
     }
 
     /* 리뷰 설정 */
@@ -4576,14 +4581,15 @@ footer img {
     }
 
     .review .review_img ul li a p {
-        width: 70%;
-        font-size: 14px;
-        padding: 0 30px;
+        width: 100%;
+        height: 40%;
+        font-size: 12px;
+        padding: 0 0;
     }
 
     .review .review_img ul li a img {
-        width: 70px;
-        right: 15%;
+        width: 50px;
+        right: 5%;
     }
 
     .review .review_img ul li a p em {
@@ -4592,15 +4598,17 @@ footer img {
     }
 
     .review .review_img ul li a p:nth-child(1) {
-        font-size: 16px;
-        padding-top: 25px;
+        font-size: 12px;
+        padding: 0 10px;
+        height: 20%;
+        text-align: center;
     }
 
     .review .review_img ul li a p:nth-child(2) {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 18px;
-        padding-top: 15px;
-        padding-bottom: 25px;
+        padding: 10px 10px;
+        padding-bottom: 30px;
     }
 
     .review .review_btn p {
@@ -4733,7 +4741,7 @@ footer img {
     #sub_product_07 .jelly>ul>li:nth-child(3),
     #sub_product_08 .jelly>ul>li:nth-child(3) {
         order: 3;
-        min-height: 400px;
+        min-height: 300px;
     }
 
     #sub_product_01 .jelly>ul>li:nth-child(2) img,
@@ -4748,6 +4756,56 @@ footer img {
         max-width: 100%;
     }
 
+    #sub_product_01 .jelly>ul>li:nth-child(1)>p,
+    #sub_product_02 .jelly>ul>li:nth-child(1)>p,
+    #sub_product_03 .jelly>ul>li:nth-child(1)>p,
+    #sub_product_04 .jelly>ul>li:nth-child(1)>p,
+    #sub_product_05 .jelly>ul>li:nth-child(1)>p,
+    #sub_product_06 .jelly>ul>li:nth-child(1)>p,
+    #sub_product_07 .jelly>ul>li:nth-child(1)>p,
+    #sub_product_08 .jelly>ul>li:nth-child(1)>p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #sub_product_01 .jelly>ul>li:nth-child(1)>h3,
+    #sub_product_02 .jelly>ul>li:nth-child(1)>h3,
+    #sub_product_03 .jelly>ul>li:nth-child(1)>h3,
+    #sub_product_04 .jelly>ul>li:nth-child(1)>h3,
+    #sub_product_05 .jelly>ul>li:nth-child(1)>h3,
+    #sub_product_06 .jelly>ul>li:nth-child(1)>h3,
+    #sub_product_07 .jelly>ul>li:nth-child(1)>h3,
+    #sub_product_08 .jelly>ul>li:nth-child(1)>h3 {
+        font-size: 10px;
+
+        align-items: center;
+    }
+
+    #sub_product_01 .jelly>ul>li:nth-child(1)>h3 img,
+    #sub_product_02 .jelly>ul>li:nth-child(1)>h3 img,
+    #sub_product_03 .jelly>ul>li:nth-child(1)>h3 img,
+    #sub_product_04 .jelly>ul>li:nth-child(1)>h3 img,
+    #sub_product_05 .jelly>ul>li:nth-child(1)>h3 img,
+    #sub_product_06 .jelly>ul>li:nth-child(1)>h3 img,
+    #sub_product_07 .jelly>ul>li:nth-child(1)>h3 img,
+    #sub_product_08 .jelly>ul>li:nth-child(1)>h3 img {
+        width: 55%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    #sub_product_04 .jelly>ul>li:nth-child(1)>h3 img {
+        width: 55%;
+    }
+
+    #sub_product_06 .jelly>ul>li:nth-child(1)>h3 img {
+        width: 50%;
+    }
+
+    #sub_product_08 .jelly>ul>li:nth-child(1)>h3 img {
+        width: 65%;
+    }
+
     #sub_product_01 .jelly .nutrition>ul>li p,
     #sub_product_02 .jelly .nutrition>ul>li p,
     #sub_product_03 .jelly .nutrition>ul>li p,
@@ -4760,6 +4818,22 @@ footer img {
         margin: 12px 0;
     }
 
+    #sub_product_01 .jelly .price,
+    #sub_product_02 .jelly .price,
+    #sub_product_03 .jelly .price,
+    #sub_product_04 .jelly .price,
+    #sub_product_05 .jelly .price,
+    #sub_product_06 .jelly .price,
+    #sub_product_07 .jelly .price,
+    #sub_product_08 .jelly .price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
     #sub_product_01 .jelly .price>p,
     #sub_product_02 .jelly .price>p,
     #sub_product_03 .jelly .price>p,
@@ -4770,7 +4844,7 @@ footer img {
     #sub_product_08 .jelly .price>p {
         font-size: 22px;
         margin-left: 20px;
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     #sub_product_01 .jelly .price>div,
@@ -4783,7 +4857,7 @@ footer img {
     #sub_product_08 .jelly .price>div {
         width: 120px;
         margin-right: 20px;
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     #sub_product_01 .jelly .cart,
@@ -4797,7 +4871,7 @@ footer img {
         font-size: 14px;
         width: 120px;
         margin-left: -60px;
-        bottom: 30px;
+        bottom: 80px;
     }
 
     #sub_product_01 .jelly .recommend_txt,
@@ -4809,7 +4883,7 @@ footer img {
     #sub_product_07 .jelly .recommend_txt,
     #sub_product_08 .jelly .recommend_txt {
         font-size: 16px;
-        margin: 20px 0;
+        margin: 40px 0;
     }
 
     #sub_product_01 .jelly .recommend>ul,
@@ -4876,12 +4950,13 @@ footer img {
     }
 
     #login .login_img img {
-        width: 80%;
+        width: 60%;
         max-width: 400px;
         min-width: 250px;
-        margin-left: -40%;
+        left: 50%;
+        margin-left: -120px;
         top: 50%;
-        margin-top: -100px;
+        margin-top: 0px;
     }
 
     #login .login_txt {
@@ -4903,9 +4978,13 @@ footer img {
         min-width: 280px;
     }
 
-    #login .login_txt ul li:nth-child(1)>img,
+    #login .login_txt ul li:nth-child(1)>img {
+        width: 20px;
+        margin-bottom: 15px;
+    }
+
     #login .login_txt ul li:nth-child(2)>img {
-        width: 80px;
+        width: 100px;
         margin-bottom: 15px;
     }
 
