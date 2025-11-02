@@ -1035,8 +1035,8 @@ img {
     order: 10;
     width: 50%;
     height: auto;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgba(254, 228, 64, 0.3);
     position: relative;
 }
@@ -3377,34 +3377,6 @@ img {
         margin-top: 0px;
     }
 
-    /* .box6-3 .floor_main {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .floor_main img {
-        width: calc(50% - 10px);
-    }
-
-    .floor_main img:nth-child(3) {
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    .floor_main img:nth-child(4) {
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    .floor_main img:nth-child(5) {
-        margin-top: 0;
-    }
-
-    .floor_main img:nth-child(6) {
-        margin-top: 0;
-    } */
-
     .box6-4 .floor_btn {
         bottom: 50px;
     }
@@ -3947,35 +3919,6 @@ img {
     .floor_list>div img:nth-child(6) {
         margin-top: 0px;
     }
-
-
-    /* .box6-3 .floor_main {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .floor_main img {
-        width: calc(50% - 10px);
-    }
-
-    .floor_main img:nth-child(3) {
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    .floor_main img:nth-child(4) {
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    .floor_main img:nth-child(5) {
-        margin-top: 0;
-    }
-
-    .floor_main img:nth-child(6) {
-        margin-top: 0;
-    } */
 
     .box6-4 .floor_btn {
         bottom: 20px;
@@ -4625,34 +4568,6 @@ img {
         margin-top: 0px;
     }
 
-    /* .box6-3 .floor_main {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .floor_main img {
-        width: calc(33.3333% - 10px);
-    }
-
-    .floor_main img:nth-child(3) {
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    .floor_main img:nth-child(4) {
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    .floor_main img:nth-child(5) {
-        margin-top: 0;
-    }
-
-    .floor_main img:nth-child(6) {
-        margin-top: 0;
-    } */
-
     .box6-4 .floor_btn {
         bottom: 20px;
     }
@@ -4796,7 +4711,6 @@ img {
     }
 
     .box8-3 img {
-        /* width: 140px; */
         width: 80%;
         height: auto;
     }
