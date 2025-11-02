@@ -30,6 +30,7 @@ img {
 
 body {
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 
@@ -520,6 +521,8 @@ body {
     transition: all 0.5s;
 
     z-index: 3;
+
+    will-change: transform;
 }
 
 .slider ul li {
@@ -1766,6 +1769,8 @@ body {
     overflow: hidden;
 
     position: absolute;
+
+    will-change: transform;
 }
 
 .text>div>ul>li {
@@ -2500,6 +2505,7 @@ body {
 /* 푸터 설정 */
 footer {
     width: 100%;
+    min-width: 100%;
     height: 500px;
 
     background-color: rgb(226, 14, 23);
@@ -2516,6 +2522,9 @@ footer div {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 footer p {
@@ -4642,7 +4651,7 @@ footer img {
         font-size: 12px;
         margin-bottom: 30px;
         padding: 0 20px;
-        color: #000;
+        color: #fff;
     }
 
     footer img {
