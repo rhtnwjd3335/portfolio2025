@@ -541,7 +541,7 @@ img {
 }
 
 .box4-2 .reservation_calender .reservation_date {
-    width: 60%;
+    width: 80%;
     height: 100%;
     background-color: #fff;
     display: flex;
@@ -564,7 +564,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    width: 60%;
+    width: 80%;
     box-sizing: border-box;
     padding: 30px 10px;
     border-radius: 40px;
@@ -783,6 +783,7 @@ img {
     width: 50%;
     height: auto;
     background-color: rgba(255, 107, 107, 0.3);
+    position: relative;
 }
 
 .box6>.box6-A {
@@ -850,8 +851,6 @@ img {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: center; */
     position: absolute;
     display: none;
 }
@@ -898,8 +897,13 @@ img {
 }
 
 .box6-4 .floor_btn {
+    height: auto;
     display: inline-block;
     margin-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 100px;
 }
 
 .box6-4 img:hover {
@@ -1031,8 +1035,8 @@ img {
     order: 10;
     width: 50%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     background-color: rgba(254, 228, 64, 0.3);
     position: relative;
 }
@@ -1047,7 +1051,7 @@ img {
 }
 
 .box8-A {
-    height: 80%;
+    height: 100%;
     width: 100%;
     padding: 0 100px;
     box-sizing: border-box;
@@ -1077,7 +1081,7 @@ img {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
-    height: 640px;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -1094,17 +1098,16 @@ img {
 
 .event_img ul {
     display: flex;
-    width: 3640px;
-    height: 100%;
+    width: 100%;
+    height: 80%;
     position: absolute;
     left: 0;
     transition: all 0.8s;
 }
 
 .event_img ul li {
-    width: 728px;
+    width: 100%;
     height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1123,7 +1126,7 @@ img {
 
 .event_img ul li a img {
     width: 100%;
-    height: 500px;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -1136,6 +1139,7 @@ img {
 
 .event_img p {
     width: 90%;
+    height: auto;
     color: #555;
     font-size: 16px;
     text-align: center;
@@ -1167,14 +1171,16 @@ img {
 }
 
 .box8 .box8-3 {
-    width: 100%;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .box8-3 .event_btn {
     display: inline-block;
-    box-sizing: border-box;
-    margin-left: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 50px;
 }
 
 .box8-3 img:hover {
@@ -1288,12 +1294,22 @@ img {
     color: #393939;
     font-size: 20px;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .box9-2 p {
     margin-bottom: 10px;
     color: #555;
     font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .box9 .box9-3 {
@@ -3113,6 +3129,11 @@ img {
 @media(min-width:768px) and (max-width:959px) {
 
     /* 섹션 설정 */
+    /* 네비게이션 설정 */
+    .menu_sub {
+        width: 60%;
+    }
+
     /* 소개 설정 */
     .box3-2 .intro {
         bottom: 40px;
@@ -3137,6 +3158,27 @@ img {
 
     .box3-2 img:nth-child(2) {
         right: -110px;
+    }
+
+
+    @keyframes intro_img_left {
+        0% {
+            left: -900px;
+        }
+
+        100% {
+            right: -120px;
+        }
+    }
+
+    @keyframes intro_img_right {
+        0% {
+            right: -900px;
+        }
+
+        100% {
+            right: -110px;
+        }
     }
 
     .box3-2 em {
@@ -3187,26 +3229,58 @@ img {
 
 
     /* 예매 설정 */
+    .box4 {
+        order: 4;
+        width: 100%;
+        height: 1100px;
+    }
+
     .box4 .box4-2 {
         margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box4-2 .reservation_calender {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
     }
 
     .box4-2 .reservation_calender .reservation_date {
-        width: 90%;
+        width: 80%;
+    }
+
+    .box4-2 .reservation_time {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 0px;
+        width: 100%;
+        height: 420px;
     }
 
     .reservation_time ul {
-        width: 90%;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .reservation_time li {
-        font-size: 16px;
+        font-size: 20px;
         letter-spacing: 0;
     }
 
     .box4-3 img {
         width: 140px;
         height: auto;
+    }
+
+    .box4-4 {
+        top: 140vh;
     }
 
     /* 예매 종료 */
@@ -3269,7 +3343,41 @@ img {
         margin-bottom: 20px;
     }
 
-    .box6-3 .floor_main {
+    .floor_list>div img {
+        width: calc(33.3333% - 10px);
+        height: auto;
+        margin: 0 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+
+    .floor_list>div img:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(2) {
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(3) {
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(4) {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(5) {
+        margin-top: 0px;
+    }
+
+    .floor_list>div img:nth-child(6) {
+        margin-top: 0px;
+    }
+
+    /* .box6-3 .floor_main {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -3295,10 +3403,10 @@ img {
 
     .floor_main img:nth-child(6) {
         margin-top: 0;
-    }
+    } */
 
     .box6-4 .floor_btn {
-        margin-left: 30px;
+        bottom: 50px;
     }
 
     .box6-4 img {
@@ -3573,6 +3681,10 @@ img {
         font-size: 14px;
     }
 
+    .menu_sub {
+        width: 60%;
+    }
+
     /* 소개 설정 */
     .box3-2 .intro {
         bottom: 40px;
@@ -3593,6 +3705,27 @@ img {
 
     .box3-2 img:nth-child(2) {
         right: -60px;
+    }
+
+
+    @keyframes intro_img_left {
+        0% {
+            left: -900px;
+        }
+
+        100% {
+            right: -50px;
+        }
+    }
+
+    @keyframes intro_img_right {
+        0% {
+            right: -900px;
+        }
+
+        100% {
+            right: -60px;
+        }
     }
 
     .box3-2 em {
@@ -3647,21 +3780,48 @@ img {
 
 
     /* 예매 설정 */
+    .box4 {
+        width: 100%;
+        height: 1100px;
+    }
+
     .box4 .box4-2 {
         margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box4-2 .reservation_calender {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .box4-2 .reservation_time {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 0px;
+        width: 100%;
+        height: 420px;
     }
 
     .box4-2 .reservation_calender .reservation_date {
-        width: 90%;
+        width: 80%;
     }
 
     .reservation_time ul {
-        width: 90%;
+        width: 80%;
         padding: 20px 10px;
+        margin: 0 auto;
     }
 
     .reservation_time li {
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 0;
     }
 
@@ -3676,6 +3836,10 @@ img {
     .box4-3 img {
         width: 140px;
         height: auto;
+    }
+
+    .box4-4 {
+        top: 140vh;
     }
 
     /* 예매 종료 */
@@ -3725,11 +3889,13 @@ img {
     /* 층별안내 설정 */
     .box6 {
         width: 100%;
+        height: 760px;
         background-color: rgba(254, 228, 64, 0.3);
     }
 
     .box6>.box6-A {
         padding: 0 40px;
+        height: 760px;
         box-sizing: border-box;
     }
 
@@ -3748,7 +3914,42 @@ img {
         margin-bottom: 20px;
     }
 
-    .box6-3 .floor_main {
+    .floor_list>div img {
+        width: calc(33.3333% - 10px);
+        height: auto;
+        margin: 0 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+
+    .floor_list>div img:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(2) {
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(3) {
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(4) {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .floor_list>div img:nth-child(5) {
+        margin-top: 0px;
+    }
+
+    .floor_list>div img:nth-child(6) {
+        margin-top: 0px;
+    }
+
+
+    /* .box6-3 .floor_main {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -3774,10 +3975,10 @@ img {
 
     .floor_main img:nth-child(6) {
         margin-top: 0;
-    }
+    } */
 
     .box6-4 .floor_btn {
-        margin-left: 30px;
+        bottom: 20px;
     }
 
     .box6-4 img {
@@ -3855,6 +4056,7 @@ img {
     .box8 {
         order: 8;
         width: 100%;
+        height: 880px;
     }
 
     .box8-A {
@@ -4128,6 +4330,10 @@ img {
         margin-left: 20px;
     }
 
+    .menu_sub {
+        width: 80%;
+    }
+
     /* 소개 설정 */
     .box3-2 .intro {
         bottom: 70px;
@@ -4143,11 +4349,31 @@ img {
     }
 
     .box3-2 img:nth-child(1) {
-        left: -30px;
+        left: 30px;
     }
 
     .box3-2 img:nth-child(2) {
-        right: -30px;
+        right: 30px;
+    }
+
+    @keyframes intro_img_left {
+        0% {
+            left: -900px;
+        }
+
+        100% {
+            right: 30px;
+        }
+    }
+
+    @keyframes intro_img_right {
+        0% {
+            right: -900px;
+        }
+
+        100% {
+            right: 30px;
+        }
     }
 
     .box3-2 em {
@@ -4215,33 +4441,49 @@ img {
 
 
     /* 예매 설정 */
-
-    .ui-datepicker table {
-        width: 50%;
-        margin-top: 20px;
-        color: #333;
-        position: absolute;
-        left: 0;
-        top: 60px;
-        margin-left: 5%;
+    .box4 {
+        width: 100%;
+        height: 1100px;
     }
 
     .box4 .box4-2 {
         margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box4-2 .reservation_calender {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
     }
 
     .box4-2 .reservation_calender .reservation_date {
-        width: 90%;
+        width: 80%;
         background-color: #393939;
     }
 
+    .box4-2 .reservation_time {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 0px;
+        width: 100%;
+        height: 420px;
+    }
+
     .reservation_time ul {
-        width: 90%;
+        width: 80%;
+        margin: 0 auto;
         padding: 20px 10px;
     }
 
     .reservation_time li {
-        font-size: 10px;
+        font-size: 16px;
         letter-spacing: 0;
         padding: 10px 10px;
     }
@@ -4257,6 +4499,10 @@ img {
     .box4-3 img {
         width: 140px;
         height: auto;
+    }
+
+    .box4-4 {
+        top: 140vh;
     }
 
     /* 예매 종료 */
@@ -4306,13 +4552,12 @@ img {
     /* 층별안내 설정 */
     .box6 {
         width: 100%;
-        height: 530px;
+        height: 760px;
         background-color: rgba(254, 228, 64, 0.3);
     }
 
     .box6>.box6-A {
         padding: 0 40px;
-        box-sizing: border-box;
     }
 
     .box6-2 i {
@@ -4330,14 +4575,64 @@ img {
         margin-bottom: 20px;
     }
 
-    .box6-3 .floor_main {
+    .box6-3 .floor_list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        height: 400px;
+        position: relative;
+    }
+
+    .box6-3 .floor_list>div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        display: none;
+    }
+
+    .floor_list>div img {
+        width: calc(33.3333% - 10px);
+        height: 200px;
+        margin: 0 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+
+    .floor_list>div img:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(2) {
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(3) {
+        margin-bottom: 10px;
+    }
+
+    .floor_list>div img:nth-child(4) {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .floor_list>div img:nth-child(5) {
+        margin-top: 0px;
+    }
+
+    .floor_list>div img:nth-child(6) {
+        margin-top: 0px;
+    }
+
+    /* .box6-3 .floor_main {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
 
     .floor_main img {
-        width: calc(50% - 10px);
+        width: calc(33.3333% - 10px);
     }
 
     .floor_main img:nth-child(3) {
@@ -4356,11 +4651,10 @@ img {
 
     .floor_main img:nth-child(6) {
         margin-top: 0;
-    }
+    } */
 
     .box6-4 .floor_btn {
-        margin-left: 30px;
-        margin-top: 230px;
+        bottom: 20px;
     }
 
     .box6-4 img {
@@ -4438,6 +4732,7 @@ img {
     .box8 {
         order: 8;
         width: 100%;
+        height: 880px;
     }
 
     .box8-A {
@@ -4446,6 +4741,45 @@ img {
 
     .box8 .box8-2 {
         margin-bottom: 20px;
+    }
+
+    .event_img ul {
+        width: 100%;
+    }
+
+    .event_img ul li {
+        width: 100%;
+    }
+
+    .event_img ul li.on {
+        display: flex;
+    }
+
+    .event_img ul li a {
+        width: 100%;
+        height: 500px;
+        margin-bottom: 10px;
+    }
+
+    .event_img ul li a img {
+        width: 100%;
+        height: 500px;
+        border-radius: 20px;
+    }
+
+    .event_img h3 {
+        margin-bottom: 5px;
+        color: #393939;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .event_img p {
+        width: 90%;
+        color: #555;
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .box8-2 h3 {
@@ -4457,8 +4791,13 @@ img {
         padding: 5px 10px;
     }
 
+    .box8-3 .event_btn {
+        margin-left: -80px;
+    }
+
     .box8-3 img {
-        width: 140px;
+        /* width: 140px; */
+        width: 80%;
         height: auto;
     }
 
@@ -4482,11 +4821,21 @@ img {
 
     .box9-2 h3 {
         font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .box9-2 p {
         margin-bottom: 0;
         font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .box9 .box9-3 {
