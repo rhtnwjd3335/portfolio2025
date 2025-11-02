@@ -3844,42 +3844,48 @@ footer img {
 
     /* 프루티 mini 설정 */
     .product .product_img>ul>li:nth-child(2) img:nth-child(2) {
-        left: 50px;
+        left: 50%;
+        margin-left: -120px;
         top: 120px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(2) img:nth-child(3) {
-        left: 60px;
+        left: 50%;
+        margin-left: -110px;
         top: 190px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(2) img:nth-child(4) {
-        left: 50px;
+        left: 50%;
+        margin-left: -120px;
         top: 255px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(2) img:nth-child(5) {
-        left: 245px;
+        left: 50%;
+        margin-left: 75px;
         top: 120px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(2) img:nth-child(6) {
-        left: 235px;
+        left: 50%;
+        margin-left: 65px;
         top: 190px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(2) img:nth-child(7) {
-        left: 245px;
+        left: 50%;
+        margin-left: 75px;
         top: 255px;
 
         display: none;
@@ -3888,8 +3894,9 @@ footer img {
 
     /* 스타믹스 mini 설정 */
     .product .product_img>ul>li:nth-child(3) img:nth-child(2) {
-        left: 60px;
-        top: 120px;
+        left: 50%;
+        margin-left: -110px;
+        top: 110px;
 
         transform: rotate(-10deg);
 
@@ -3897,8 +3904,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(3) img:nth-child(3) {
-        left: 60px;
-        top: 185px;
+        left: 50%;
+        margin-left: -110px;
+        top: 175px;
 
         transform: rotate(60deg);
 
@@ -3906,29 +3914,33 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(3) img:nth-child(4) {
-        left: 60px;
-        top: 260px;
+        left: 50%;
+        margin-left: -110px;
+        top: 250px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(3) img:nth-child(5) {
-        left: 245px;
-        top: 120px;
+        left: 50%;
+        margin-left: 70px;
+        top: 110px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(3) img:nth-child(6) {
-        left: 245px;
-        top: 185px;
+        left: 50%;
+        margin-left: 70px;
+        top: 175px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(3) img:nth-child(7) {
-        left: 245px;
-        top: 250px;
+        left: 50%;
+        margin-left: 70px;
+        top: 240px;
 
         display: none;
     }
@@ -3936,15 +3948,17 @@ footer img {
 
     /* 그레이프 mini 설정 */
     .product .product_img>ul>li:nth-child(4) img:nth-child(2) {
-        left: 60px;
-        top: 120px;
+        left: 50%;
+        margin-left: -110px;
+        top: 110px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(4) img:nth-child(3) {
-        left: 60px;
-        top: 190px;
+        left: 50%;
+        margin-left: -110px;
+        top: 180px;
 
         transform: rotate(80deg);
 
@@ -3952,15 +3966,17 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(4) img:nth-child(4) {
-        left: 70px;
-        top: 260px;
+        left: 50%;
+        margin-left: -100px;
+        top: 250px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(4) img:nth-child(5) {
-        left: 240px;
-        top: 120px;
+        left: 50%;
+        margin-left: 65px;
+        top: 110px;
 
         transform: rotate(90deg);
 
@@ -3968,8 +3984,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(4) img:nth-child(6) {
-        left: 230px;
-        top: 190px;
+        left: 50%;
+        margin-left: 60px;
+        top: 180px;
 
         transform: rotate(20deg);
 
@@ -3977,8 +3994,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(4) img:nth-child(7) {
-        left: 240px;
-        top: 260px;
+        left: 50%;
+        margin-left: 65px;
+        top: 250px;
 
         transform: rotate(50deg);
 
@@ -3988,7 +4006,8 @@ footer img {
 
     /* 웜즈 mini 설정 */
     .product .product_img>ul>li:nth-child(5) img:nth-child(2) {
-        left: 60px;
+        left: 50%;
+        margin-left: -110px;
         top: 120px;
 
         transform: rotate(-20deg);
@@ -3997,7 +4016,8 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(5) img:nth-child(3) {
-        left: 50px;
+        left: 50%;
+        margin-left: -110px;
         top: 190px;
 
         transform: rotate(-90deg);
@@ -4006,7 +4026,8 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(5) img:nth-child(4) {
-        left: 70px;
+        left: 50%;
+        margin-left: -100px;
         top: 260px;
 
         transform: rotate(130deg);
@@ -4015,7 +4036,8 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(5) img:nth-child(5) {
-        left: 225px;
+        left: 50%;
+        margin-left: 60px;
         top: 120px;
 
         transform: rotate(140deg);
@@ -4024,7 +4046,8 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(5) img:nth-child(6) {
-        left: 230px;
+        left: 50%;
+        margin-left: 60px;
         top: 190px;
 
         transform: rotate(90deg);
@@ -4033,7 +4056,8 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(5) img:nth-child(7) {
-        left: 220px;
+        left: 50%;
+        margin-left: 50px;
         top: 260px;
 
         transform: rotate(-50deg);
@@ -4044,8 +4068,9 @@ footer img {
 
     /* 웜즈조르 mini 설정 */
     .product .product_img>ul>li:nth-child(6) img:nth-child(2) {
-        left: 60px;
-        top: 120px;
+        left: 50%;
+        margin-left: -110px;
+        top: 110px;
 
         transform: rotate(70deg);
 
@@ -4053,15 +4078,17 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(6) img:nth-child(3) {
-        left: 55px;
-        top: 190px;
+        left: 50%;
+        margin-left: -120px;
+        top: 180px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(6) img:nth-child(4) {
-        left: 50px;
-        top: 260px;
+        left: 50%;
+        margin-left: -120px;
+        top: 250px;
 
         transform: rotate(-50deg);
 
@@ -4069,8 +4096,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(6) img:nth-child(5) {
-        left: 245px;
-        top: 120px;
+        left: 50%;
+        margin-left: 65px;
+        top: 110px;
 
         transform: rotate(-160deg);
 
@@ -4078,8 +4106,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(6) img:nth-child(6) {
-        left: 245px;
-        top: 190px;
+        left: 50%;
+        margin-left: 70px;
+        top: 180px;
 
         transform: rotate(120deg);
 
@@ -4087,8 +4116,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(6) img:nth-child(7) {
-        left: 245px;
-        top: 260px;
+        left: 50%;
+        margin-left: 65px;
+        top: 250px;
 
         transform: rotate(40deg);
 
@@ -4098,15 +4128,17 @@ footer img {
 
     /* 콜라 mini 설정 */
     .product .product_img>ul>li:nth-child(7) img:nth-child(2) {
-        left: 60px;
-        top: 120px;
+        left: 50%;
+        margin-left: -110px;
+        top: 110px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(7) img:nth-child(3) {
-        left: 60px;
-        top: 190px;
+        left: 50%;
+        margin-left: -110px;
+        top: 180px;
 
         transform: rotate(80deg);
 
@@ -4114,15 +4146,17 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(7) img:nth-child(4) {
-        left: 60px;
-        top: 260px;
+        left: 50%;
+        margin-left: -110px;
+        top: 250px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(7) img:nth-child(5) {
-        left: 245px;
-        top: 120px;
+        left: 50%;
+        margin-left: 70px;
+        top: 110px;
 
         transform: rotate(80deg);
 
@@ -4130,15 +4164,17 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(7) img:nth-child(6) {
-        left: 245px;
-        top: 190px;
+        left: 50%;
+        margin-left: 70px;
+        top: 180px;
 
         display: none;
     }
 
     .product .product_img>ul>li:nth-child(7) img:nth-child(7) {
-        left: 245px;
-        top: 260px;
+        left: 50%;
+        margin-left: 70px;
+        top: 250px;
 
         transform: rotate(80deg);
 
@@ -4147,8 +4183,9 @@ footer img {
 
     /* 콜라조르 mini 설정 */
     .product .product_img>ul>li:nth-child(8) img:nth-child(2) {
-        left: 40px;
-        top: 110px;
+        left: 50%;
+        margin-left: -125px;
+        top: 100px;
 
         transform: rotate(-90deg);
 
@@ -4156,8 +4193,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(8) img:nth-child(3) {
-        left: 40px;
-        top: 180px;
+        left: 50%;
+        margin-left: -125px;
+        top: 170px;
 
         transform: rotate(-10deg);
 
@@ -4165,8 +4203,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(8) img:nth-child(4) {
-        left: 40px;
-        top: 250px;
+        left: 50%;
+        margin-left: -125px;
+        top: 240px;
 
         transform: rotate(-90deg);
 
@@ -4174,8 +4213,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(8) img:nth-child(5) {
-        left: 235px;
-        top: 110px;
+        left: 50%;
+        margin-left: 60px;
+        top: 100px;
 
         transform: rotate(-10deg);
 
@@ -4183,8 +4223,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(8) img:nth-child(6) {
-        left: 235px;
-        top: 180px;
+        left: 50%;
+        margin-left: 60px;
+        top: 170px;
 
         transform: rotate(-90deg);
 
@@ -4192,8 +4233,9 @@ footer img {
     }
 
     .product .product_img>ul>li:nth-child(8) img:nth-child(7) {
-        left: 235px;
-        top: 250px;
+        left: 50%;
+        margin-left: 60px;
+        top: 240px;
 
         transform: rotate(-10deg);
 
